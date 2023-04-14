@@ -1,0 +1,7 @@
+archetype Player_7704fb97ad8c64b28a3b6f9053338e64
+  lod 0
+    WorldPosition 
+      value [compression "None"]
+    WorldOrientation 
+      value [bits "32"]
+
