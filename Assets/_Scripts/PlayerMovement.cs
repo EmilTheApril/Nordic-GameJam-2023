@@ -54,7 +54,7 @@ public class PlayerMovement : MonoBehaviour
         if (!isMonster) return;
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
-            rb.AddForce(transform.forward * 1000, ForceMode.Impulse);
+            rb.AddForce(camera.transform.forward * 1000, ForceMode.Impulse);
         }
     }
 
