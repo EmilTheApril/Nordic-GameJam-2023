@@ -15,7 +15,7 @@ namespace Coherence.Generated
 	public struct Player_id0_PlayerMovement__char_46_DisableAttackObject_43953eec_cfe5_4f0b_a2d0_c0428330d706 : IEntityCommand
 	{
 
-		public MessageTarget Routing => MessageTarget.AuthorityOnly;
+		public MessageTarget Routing => MessageTarget.All;
 		public uint GetComponentType() => Definition.InternalPlayer_id0_PlayerMovement__char_46_DisableAttackObject_43953eec_cfe5_4f0b_a2d0_c0428330d706;
 
 		public static void Serialize(Player_id0_PlayerMovement__char_46_DisableAttackObject_43953eec_cfe5_4f0b_a2d0_c0428330d706 commandData, IOutProtocolBitStream bitStream)
