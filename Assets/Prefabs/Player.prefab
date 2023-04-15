@@ -1262,7 +1262,7 @@ Transform:
   m_GameObject: {fileID: 6338119257385309782}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6340756503015223476}
@@ -1304,7 +1304,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6338119257385309782}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 72f05119ceab6449bb9103577b4dced8, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5
@@ -1326,7 +1326,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 112
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &3364310959788457435
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1339,8 +1339,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cc3647775fb84bf6a20cf08be2a0515, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
-  jumpForce: 600
+  speed: 5.5
+  jumpForce: 500
   mouseSensitivity: 100
   camera: {fileID: 8509108052325911209}
 --- !u!114 &1938517769589058593
