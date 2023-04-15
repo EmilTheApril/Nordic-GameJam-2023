@@ -93,9 +93,7 @@ namespace Coherence.Generated
 		private CoherenceSync coherenceSync;
 		private Logger logger;
 
-		// Cached targets for commands		
-		private PlayerTimer Player_id0_PlayerTimer__char_46_SetGameManagerTime_9afdbe10_9e09_4007_8d36_d24e6e5bffab_CommandTarget;		
-		private PlayerTimer Player_id0_PlayerTimer__char_46_SetTime_a658414d_2522_48ae_af9d_4ab558a1a4b0_CommandTarget;
+		// Cached targets for commands
 
 		private IClient client;
 		private CoherenceMonoBridge monoBridge => coherenceSync.MonoBridge;
@@ -106,26 +104,6 @@ namespace Coherence.Generated
 			coherenceSync.usingReflection = false;
 
 			logger = coherenceSync.logger.With<CoherenceSyncPlayer_id0>();
-			if (coherenceSync.TryGetBindingByGuid("9afdbe10-9e09-4007-8d36-d24e6e5bffab", "SetGameManagerTime", out Binding Player_id0_PlayerTimer__char_46_SetGameManagerTime_9afdbe10_9e09_4007_8d36_d24e6e5bffab))
-			{
-				Player_id0_PlayerTimer__char_46_SetGameManagerTime_9afdbe10_9e09_4007_8d36_d24e6e5bffab_CommandTarget = (PlayerTimer)Player_id0_PlayerTimer__char_46_SetGameManagerTime_9afdbe10_9e09_4007_8d36_d24e6e5bffab.UnityComponent;
-				coherenceSync.AddCommandRequestDelegate("PlayerTimer.SetGameManagerTime", "()",
-				SendCommand_Player_id0_PlayerTimer__char_46_SetGameManagerTime_9afdbe10_9e09_4007_8d36_d24e6e5bffab, ReceiveLocalCommand_Player_id0_PlayerTimer__char_46_SetGameManagerTime_9afdbe10_9e09_4007_8d36_d24e6e5bffab, MessageTarget.AuthorityOnly, Player_id0_PlayerTimer__char_46_SetGameManagerTime_9afdbe10_9e09_4007_8d36_d24e6e5bffab_CommandTarget,false);
-			}
-			else
-			{
-				logger.Error("Couldn't find command binding (SetGameManagerTime)");
-			}
-			if (coherenceSync.TryGetBindingByGuid("a658414d-2522-48ae-af9d-4ab558a1a4b0", "SetTime", out Binding Player_id0_PlayerTimer__char_46_SetTime_a658414d_2522_48ae_af9d_4ab558a1a4b0))
-			{
-				Player_id0_PlayerTimer__char_46_SetTime_a658414d_2522_48ae_af9d_4ab558a1a4b0_CommandTarget = (PlayerTimer)Player_id0_PlayerTimer__char_46_SetTime_a658414d_2522_48ae_af9d_4ab558a1a4b0.UnityComponent;
-				coherenceSync.AddCommandRequestDelegate("PlayerTimer.SetTime", "(System.Single)",
-				SendCommand_Player_id0_PlayerTimer__char_46_SetTime_a658414d_2522_48ae_af9d_4ab558a1a4b0, ReceiveLocalCommand_Player_id0_PlayerTimer__char_46_SetTime_a658414d_2522_48ae_af9d_4ab558a1a4b0, MessageTarget.AuthorityOnly, Player_id0_PlayerTimer__char_46_SetTime_a658414d_2522_48ae_af9d_4ab558a1a4b0_CommandTarget,false);
-			}
-			else
-			{
-				logger.Error("Couldn't find command binding (SetTime)");
-			}
 			if (coherenceSync.TryGetBindingByGuid("20c1e808-3e35-4fee-98a1-95a3f8cf6116", "position", out Binding InternalWorldPosition_Translation_value))
 			{
 				var clone = new Binding_7704fb97ad8c64b28a3b6f9053338e64_20c1e808_3e35_4fee_98a1_95a3f8cf6116();
@@ -178,55 +156,11 @@ namespace Coherence.Generated
 			}
 			this.client = client;
 		}
-		void SendCommand_Player_id0_PlayerTimer__char_46_SetGameManagerTime_9afdbe10_9e09_4007_8d36_d24e6e5bffab(MessageTarget target, object[] args)
-		{
-			var command = new Player_id0_PlayerTimer__char_46_SetGameManagerTime_9afdbe10_9e09_4007_8d36_d24e6e5bffab();
-			client.SendCommand(command, target, coherenceSync.EntityID);
-		}
-
-		void ReceiveLocalCommand_Player_id0_PlayerTimer__char_46_SetGameManagerTime_9afdbe10_9e09_4007_8d36_d24e6e5bffab(MessageTarget target, object[] args)
-		{
-			var command = new Player_id0_PlayerTimer__char_46_SetGameManagerTime_9afdbe10_9e09_4007_8d36_d24e6e5bffab();
-			ReceiveCommand_Player_id0_PlayerTimer__char_46_SetGameManagerTime_9afdbe10_9e09_4007_8d36_d24e6e5bffab(command);
-		}
-
-		void ReceiveCommand_Player_id0_PlayerTimer__char_46_SetGameManagerTime_9afdbe10_9e09_4007_8d36_d24e6e5bffab(Player_id0_PlayerTimer__char_46_SetGameManagerTime_9afdbe10_9e09_4007_8d36_d24e6e5bffab command)
-		{
-			var target = Player_id0_PlayerTimer__char_46_SetGameManagerTime_9afdbe10_9e09_4007_8d36_d24e6e5bffab_CommandTarget;
-			target.SetGameManagerTime();
-		}
-		void SendCommand_Player_id0_PlayerTimer__char_46_SetTime_a658414d_2522_48ae_af9d_4ab558a1a4b0(MessageTarget target, object[] args)
-		{
-			var command = new Player_id0_PlayerTimer__char_46_SetTime_a658414d_2522_48ae_af9d_4ab558a1a4b0();
-			int i = 0;
-			command.time = (float)((System.Single)args[i++]);
-			client.SendCommand(command, target, coherenceSync.EntityID);
-		}
-
-		void ReceiveLocalCommand_Player_id0_PlayerTimer__char_46_SetTime_a658414d_2522_48ae_af9d_4ab558a1a4b0(MessageTarget target, object[] args)
-		{
-			var command = new Player_id0_PlayerTimer__char_46_SetTime_a658414d_2522_48ae_af9d_4ab558a1a4b0();
-			int i = 0;
-			command.time = (float)((System.Single)args[i++]);
-			ReceiveCommand_Player_id0_PlayerTimer__char_46_SetTime_a658414d_2522_48ae_af9d_4ab558a1a4b0(command);
-		}
-
-		void ReceiveCommand_Player_id0_PlayerTimer__char_46_SetTime_a658414d_2522_48ae_af9d_4ab558a1a4b0(Player_id0_PlayerTimer__char_46_SetTime_a658414d_2522_48ae_af9d_4ab558a1a4b0 command)
-		{
-			var target = Player_id0_PlayerTimer__char_46_SetTime_a658414d_2522_48ae_af9d_4ab558a1a4b0_CommandTarget;
-			target.SetTime((System.Single)(command.time));
-		}
 
 		public override void ReceiveCommand(IEntityCommand command)
 		{
 			switch(command)
 			{
-				case Player_id0_PlayerTimer__char_46_SetGameManagerTime_9afdbe10_9e09_4007_8d36_d24e6e5bffab castedCommand:
-					ReceiveCommand_Player_id0_PlayerTimer__char_46_SetGameManagerTime_9afdbe10_9e09_4007_8d36_d24e6e5bffab(castedCommand);
-					break;
-				case Player_id0_PlayerTimer__char_46_SetTime_a658414d_2522_48ae_af9d_4ab558a1a4b0 castedCommand:
-					ReceiveCommand_Player_id0_PlayerTimer__char_46_SetTime_a658414d_2522_48ae_af9d_4ab558a1a4b0(castedCommand);
-					break;
 				default:
 					logger.Warning($"[CoherenceSyncPlayer_id0] Unhandled command: {command.GetType()}.");
 					break;

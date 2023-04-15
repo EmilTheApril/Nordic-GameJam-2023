@@ -1,8 +1,3 @@
-command Player_id0_PlayerTimer__char_46_SetGameManagerTime_9afdbe10_9e09_4007_8d36_d24e6e5bffab [routing "AuthorityOnly"]
-
-command Player_id0_PlayerTimer__char_46_SetTime_a658414d_2522_48ae_af9d_4ab558a1a4b0 [routing "AuthorityOnly"]
-  time Float [compression "None"]
-
 archetype GameManager_25066ca7913364f2f9c66eac585b7269
   lod 0
     WorldPosition 
