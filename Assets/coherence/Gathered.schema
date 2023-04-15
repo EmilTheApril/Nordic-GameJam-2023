@@ -29,7 +29,7 @@ component Player_id0_UnityEngine__char_46_Transform_6549551179320053454
   rotation Quaternion [bits "32"]
   localScale Vector3 [compression "None"]
 
-command Player_id0_PlayerMovement__char_46_DisableAttackObject_43953eec_cfe5_4f0b_a2d0_c0428330d706 [routing "All"]
+command Player_id0_PlayerMovement__char_46_DisableAttackObject_43953eec_cfe5_4f0b_a2d0_c0428330d706 [routing "AuthorityOnly"]
 
 command Player_id0_PlayerTimer__char_46_SetGameManagerTime_9afdbe10_9e09_4007_8d36_d24e6e5bffab [routing "AuthorityOnly"]
 
