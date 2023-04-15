@@ -22,7 +22,7 @@ namespace Coherence.Generated
 	using Logger = Coherence.Log.Logger;
 	using UnityEngine.Scripting;
 
-	public class Binding_7704fb97ad8c64b28a3b6f9053338e64_169c2462_189e_4755_b8c8_4c11ac49b673 : PositionBinding
+	public class Binding_7704fb97ad8c64b28a3b6f9053338e64_20c1e808_3e35_4fee_98a1_95a3f8cf6116 : PositionBinding
 	{
 		public override string CoherenceComponentName => "WorldPosition";
 
@@ -53,7 +53,7 @@ namespace Coherence.Generated
 		}
 	}
 
-	public class Binding_7704fb97ad8c64b28a3b6f9053338e64_bf056733_f71a_4d54_8256_4a495bf18264 : RotationBinding
+	public class Binding_7704fb97ad8c64b28a3b6f9053338e64_ece83bd6_0835_4eee_a26e_fd7c6f6a3fdc : RotationBinding
 	{
 		public override string CoherenceComponentName => "WorldOrientation";
 
@@ -104,9 +104,9 @@ namespace Coherence.Generated
 			coherenceSync.usingReflection = false;
 
 			logger = coherenceSync.logger.With<CoherenceSyncPlayer_id0>();
-			if (coherenceSync.TryGetBindingByGuid("169c2462-189e-4755-b8c8-4c11ac49b673", "position", out Binding InternalWorldPosition_Translation_value))
+			if (coherenceSync.TryGetBindingByGuid("20c1e808-3e35-4fee-98a1-95a3f8cf6116", "position", out Binding InternalWorldPosition_Translation_value))
 			{
-				var clone = new Binding_7704fb97ad8c64b28a3b6f9053338e64_169c2462_189e_4755_b8c8_4c11ac49b673();
+				var clone = new Binding_7704fb97ad8c64b28a3b6f9053338e64_20c1e808_3e35_4fee_98a1_95a3f8cf6116();
 				InternalWorldPosition_Translation_value.CloneTo(clone);
 				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalWorldPosition_Translation_value)] = clone;
 			}
@@ -114,9 +114,9 @@ namespace Coherence.Generated
 			{
 				logger.Error("Couldn't find binding (UnityEngine.Transform).position");
 			}
-			if (coherenceSync.TryGetBindingByGuid("bf056733-f71a-4d54-8256-4a495bf18264", "rotation", out Binding InternalWorldOrientation_Rotation_value))
+			if (coherenceSync.TryGetBindingByGuid("ece83bd6-0835-4eee-a26e-fd7c6f6a3fdc", "rotation", out Binding InternalWorldOrientation_Rotation_value))
 			{
-				var clone = new Binding_7704fb97ad8c64b28a3b6f9053338e64_bf056733_f71a_4d54_8256_4a495bf18264();
+				var clone = new Binding_7704fb97ad8c64b28a3b6f9053338e64_ece83bd6_0835_4eee_a26e_fd7c6f6a3fdc();
 				InternalWorldOrientation_Rotation_value.CloneTo(clone);
 				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalWorldOrientation_Rotation_value)] = clone;
 			}

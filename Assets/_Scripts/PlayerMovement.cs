@@ -7,10 +7,13 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float speed;
     [SerializeField] private float jumpForce;
+    [SerializeField] private float mouseSensitivity = 100.0f;
     private bool jumping;
     private bool isGrounded;
 
     private Vector3 dir;
+
+    [SerializeField] private Camera camera;
 
     private Rigidbody rb;
 
@@ -19,8 +22,22 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody>();
     }
 
+    private void Update()
+    {
+        MouseMovement();
+    }
+
     private void FixedUpdate()
     {
+        if (Input.GetKeyDown(KeyCode.Escape) && Cursor.lockState != CursorLockMode.Locked)
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+        else if(Input.GetKeyDown(KeyCode.Escape) && Cursor.lockState != CursorLockMode.None)
+        {
+            Cursor.lockState = CursorLockMode.None;
+        }
+
         Move();
         Jump();
     }
@@ -37,7 +54,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Move()
     {
-        rb.velocity = new Vector3(dir.x * speed, rb.velocity.y, dir.z * speed);
+        rb.velocity = transform.forward * dir.z * speed + new Vector3(0, rb.velocity.y, 0) + transform.right * dir.x * speed;
     }
 
     private void Jump()
@@ -45,6 +62,14 @@ public class PlayerMovement : MonoBehaviour
         if (!jumping || !isGrounded) return;
         isGrounded = false;
         rb.AddForce(transform.up * jumpForce);
+    }
+
+    private void MouseMovement()
+    {
+        float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
+        float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
+        camera.transform.Rotate(new Vector3(-mouseY, 0, 0));
+        transform.Rotate(new Vector3(0, mouseX, 0));
     }
 
     private void OnCollisionEnter(Collision other)
