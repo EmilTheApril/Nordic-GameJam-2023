@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: RuntimeSettings
   m_EditorClassIdentifier: 
   versionInfo: {fileID: 11400000, guid: 2191b6f902c97477baa32a7919010503, type: 2}
-  runtimeKey: c55421b738f54b63a7bf3ac406ac3ee5
-  schemaID: f924739fae6bfacc91f677a95eaa317ec1a35466
+  runtimeKey: 
+  schemaID: 
   simulatorSlug: 
   localHost: 127.0.0.1
   localWorldUDPPort: 32001
@@ -28,7 +28,7 @@ MonoBehaviour:
   localHttpServerPort: 42006
   localDevelopmentMode: 1
   useDebugStreams: 0
-  organizationID: cgspss5bo1hmvis25p1g
-  projectID: cgspss5bo1hmvis25p20
-  projectName: Nordic GameJam 2023
+  organizationID: 
+  projectID: 
+  projectName: 
   playApiEndpoint: https://api.prod.coherence.io/v1/play
