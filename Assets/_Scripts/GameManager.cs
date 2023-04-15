@@ -89,6 +89,9 @@ public class GameManager : MonoBehaviour
             GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
             int rnd = Random.Range(0, players.Length);
 
+            players[rnd].GetComponent<PlayerTimer>().SetGameManagerTime();
+            players[rnd].GetComponent<PlayerMovement>().SetIsMonster();
+
             foreach (GameObject player in players)
             {
                 if (player.GetComponent<PlayerMovement>() != null)
@@ -96,9 +99,6 @@ public class GameManager : MonoBehaviour
                     player.GetComponent<PlayerMovement>().SendDisableAttackCommand();
                 }
             }
-
-            players[rnd].GetComponent<PlayerTimer>().SetGameManagerTime();
-            players[rnd].GetComponent<PlayerMovement>().SetIsMonster();
         }
     }
 }
