@@ -1,5 +1,10 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Asset Packs/Fantasy Skybox FREE/Cubemaps.meta
+guid: b40198e48fec1db4ba2bdbb96a9e1e9b
+folderAsset: yes
+========
 guid: 1b8d251f9af63b746bf2f7ffe00ebb9b
+>>>>>>>> 59db9f95152ad3d4ebdf7d6934250886f1cc8936:Assets/TextMesh Pro/Documentation/TextMesh Pro User Guide 2016.pdf.meta
 DefaultImporter:
   externalObjects: {}
   userData: 

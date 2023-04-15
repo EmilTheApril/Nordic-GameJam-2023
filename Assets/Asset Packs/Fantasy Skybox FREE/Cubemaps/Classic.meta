@@ -1,6 +1,10 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Asset Packs/Fantasy Skybox FREE/Cubemaps/Classic.meta
 guid: 69ee00d9176dabc4687615071b161c20
 folderAsset: yes
+========
+guid: 0851605490a599b46b6ac5cb681d93ea
+>>>>>>>> 59db9f95152ad3d4ebdf7d6934250886f1cc8936:Assets/TextMesh Pro/Examples & Extras/Scenes/26 - Dropdown Placeholder Example.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
