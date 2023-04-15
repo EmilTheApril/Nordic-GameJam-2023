@@ -35,6 +35,8 @@ command Player_id0_PlayerMovement__char_46_EnableAttackObject_cd031244_34fe_41c9
 
 command Player_id0_PlayerMovement__char_46_SendDisableAttackCommand_3dd80c95_dc6c_4a6b_8ddf_f48affbea502 [routing "All"]
 
+command Player_id0_PlayerMovement__char_46_SetIsMonster_0e058992_7a34_4dc2_a5b1_584d1c8bb782 [routing "All"]
+
 command Player_id0_PlayerTimer__char_46_SetGameManagerTime_9afdbe10_9e09_4007_8d36_d24e6e5bffab [routing "AuthorityOnly"]
 
 command Player_id0_PlayerTimer__char_46_SetTime_a658414d_2522_48ae_af9d_4ab558a1a4b0 [routing "AuthorityOnly"]

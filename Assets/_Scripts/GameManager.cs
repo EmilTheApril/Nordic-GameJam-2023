@@ -94,7 +94,7 @@ public class GameManager : MonoBehaviour
 
             foreach (GameObject player in players)
             {
-                if (player.GetComponent<PlayerMovement>() != null)
+                if (player != null)
                 {
                     player.GetComponent<PlayerMovement>().SendDisableAttackCommand();
                 }

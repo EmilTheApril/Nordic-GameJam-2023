@@ -1022,6 +1022,7 @@ namespace Coherence.Generated
 		private PlayerMovement Player_id0_PlayerMovement__char_46_DisableAttackObject_43953eec_cfe5_4f0b_a2d0_c0428330d706_CommandTarget;		
 		private PlayerMovement Player_id0_PlayerMovement__char_46_EnableAttackObject_cd031244_34fe_41c9_857c_d2909c1e32f8_CommandTarget;		
 		private PlayerMovement Player_id0_PlayerMovement__char_46_SendDisableAttackCommand_3dd80c95_dc6c_4a6b_8ddf_f48affbea502_CommandTarget;		
+		private PlayerMovement Player_id0_PlayerMovement__char_46_SetIsMonster_0e058992_7a34_4dc2_a5b1_584d1c8bb782_CommandTarget;		
 		private PlayerTimer Player_id0_PlayerTimer__char_46_SetGameManagerTime_9afdbe10_9e09_4007_8d36_d24e6e5bffab_CommandTarget;		
 		private PlayerTimer Player_id0_PlayerTimer__char_46_SetTime_a658414d_2522_48ae_af9d_4ab558a1a4b0_CommandTarget;
 
@@ -1063,6 +1064,16 @@ namespace Coherence.Generated
 			else
 			{
 				logger.Error("Couldn't find command binding (SendDisableAttackCommand)");
+			}
+			if (coherenceSync.TryGetBindingByGuid("0e058992-7a34-4dc2-a5b1-584d1c8bb782", "SetIsMonster", out Binding Player_id0_PlayerMovement__char_46_SetIsMonster_0e058992_7a34_4dc2_a5b1_584d1c8bb782))
+			{
+				Player_id0_PlayerMovement__char_46_SetIsMonster_0e058992_7a34_4dc2_a5b1_584d1c8bb782_CommandTarget = (PlayerMovement)Player_id0_PlayerMovement__char_46_SetIsMonster_0e058992_7a34_4dc2_a5b1_584d1c8bb782.UnityComponent;
+				coherenceSync.AddCommandRequestDelegate("PlayerMovement.SetIsMonster", "()",
+				SendCommand_Player_id0_PlayerMovement__char_46_SetIsMonster_0e058992_7a34_4dc2_a5b1_584d1c8bb782, ReceiveLocalCommand_Player_id0_PlayerMovement__char_46_SetIsMonster_0e058992_7a34_4dc2_a5b1_584d1c8bb782, MessageTarget.All, Player_id0_PlayerMovement__char_46_SetIsMonster_0e058992_7a34_4dc2_a5b1_584d1c8bb782_CommandTarget,false);
+			}
+			else
+			{
+				logger.Error("Couldn't find command binding (SetIsMonster)");
 			}
 			if (coherenceSync.TryGetBindingByGuid("9afdbe10-9e09-4007-8d36-d24e6e5bffab", "SetGameManagerTime", out Binding Player_id0_PlayerTimer__char_46_SetGameManagerTime_9afdbe10_9e09_4007_8d36_d24e6e5bffab))
 			{
@@ -1437,6 +1448,23 @@ namespace Coherence.Generated
 			var target = Player_id0_PlayerMovement__char_46_SendDisableAttackCommand_3dd80c95_dc6c_4a6b_8ddf_f48affbea502_CommandTarget;
 			target.SendDisableAttackCommand();
 		}
+		void SendCommand_Player_id0_PlayerMovement__char_46_SetIsMonster_0e058992_7a34_4dc2_a5b1_584d1c8bb782(MessageTarget target, object[] args)
+		{
+			var command = new Player_id0_PlayerMovement__char_46_SetIsMonster_0e058992_7a34_4dc2_a5b1_584d1c8bb782();
+			client.SendCommand(command, target, coherenceSync.EntityID);
+		}
+
+		void ReceiveLocalCommand_Player_id0_PlayerMovement__char_46_SetIsMonster_0e058992_7a34_4dc2_a5b1_584d1c8bb782(MessageTarget target, object[] args)
+		{
+			var command = new Player_id0_PlayerMovement__char_46_SetIsMonster_0e058992_7a34_4dc2_a5b1_584d1c8bb782();
+			ReceiveCommand_Player_id0_PlayerMovement__char_46_SetIsMonster_0e058992_7a34_4dc2_a5b1_584d1c8bb782(command);
+		}
+
+		void ReceiveCommand_Player_id0_PlayerMovement__char_46_SetIsMonster_0e058992_7a34_4dc2_a5b1_584d1c8bb782(Player_id0_PlayerMovement__char_46_SetIsMonster_0e058992_7a34_4dc2_a5b1_584d1c8bb782 command)
+		{
+			var target = Player_id0_PlayerMovement__char_46_SetIsMonster_0e058992_7a34_4dc2_a5b1_584d1c8bb782_CommandTarget;
+			target.SetIsMonster();
+		}
 		void SendCommand_Player_id0_PlayerTimer__char_46_SetGameManagerTime_9afdbe10_9e09_4007_8d36_d24e6e5bffab(MessageTarget target, object[] args)
 		{
 			var command = new Player_id0_PlayerTimer__char_46_SetGameManagerTime_9afdbe10_9e09_4007_8d36_d24e6e5bffab();
@@ -1488,6 +1516,9 @@ namespace Coherence.Generated
 					break;
 				case Player_id0_PlayerMovement__char_46_SendDisableAttackCommand_3dd80c95_dc6c_4a6b_8ddf_f48affbea502 castedCommand:
 					ReceiveCommand_Player_id0_PlayerMovement__char_46_SendDisableAttackCommand_3dd80c95_dc6c_4a6b_8ddf_f48affbea502(castedCommand);
+					break;
+				case Player_id0_PlayerMovement__char_46_SetIsMonster_0e058992_7a34_4dc2_a5b1_584d1c8bb782 castedCommand:
+					ReceiveCommand_Player_id0_PlayerMovement__char_46_SetIsMonster_0e058992_7a34_4dc2_a5b1_584d1c8bb782(castedCommand);
 					break;
 				case Player_id0_PlayerTimer__char_46_SetGameManagerTime_9afdbe10_9e09_4007_8d36_d24e6e5bffab castedCommand:
 					ReceiveCommand_Player_id0_PlayerTimer__char_46_SetGameManagerTime_9afdbe10_9e09_4007_8d36_d24e6e5bffab(castedCommand);
