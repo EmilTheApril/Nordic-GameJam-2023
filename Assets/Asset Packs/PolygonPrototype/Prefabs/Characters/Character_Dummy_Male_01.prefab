@@ -1086,8 +1086,7 @@ MonoBehaviour:
     archetypeName: Character_Dummy_Male_01_2f3e27eecb190e44a9af50723c394274
     GeneratesArchetypeDefinition: 1
   InterpolationLocation: 1
-  bakedScriptType: Coherence.Generated.CoherenceSyncCharacter_Dummy_Male_01_id0,
-    Assembly-CSharp
+  bakedScriptType: Coherence.Generated.CoherenceSyncCharacter_Dummy_Male_01, Assembly-CSharp
   approveAuthorityTransferRequests: 1
   simulationType: 0
   authorityTransferType: 0
