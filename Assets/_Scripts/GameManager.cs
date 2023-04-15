@@ -84,7 +84,7 @@ public class GameManager : MonoBehaviour
 
         if (!gameStarted)
         {
-
+            Debug.Log("Ups");
             gameStarted = true;
             GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
             int rnd = Random.Range(0, players.Length);

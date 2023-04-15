@@ -1441,6 +1441,7 @@ MonoBehaviour:
   jumpForce: 500
   mouseSensitivity: 100
   attackObject: {fileID: 1585487376012753797}
+  TagText: {fileID: 0}
   isMonster: 0
   camera: {fileID: 8509108052325911209}
 --- !u!114 &1938517769589058593

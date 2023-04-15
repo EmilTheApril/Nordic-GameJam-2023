@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     private bool isGrounded;
 
     [SerializeField] private GameObject attackObject;
+    [SerializeField] private GameObject TagText;
 
     private Vector3 dir;
 
@@ -24,6 +25,8 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+        TagText = GameObject.FindGameObjectWithTag("TagText");
+        TagText.SetActive(false);
     }
 
     private void Update()
@@ -54,17 +57,22 @@ public class PlayerMovement : MonoBehaviour
         if (!isMonster) return;
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
-            rb.AddForce(camera.transform.forward * 1000, ForceMode.Impulse);
+            rb.AddForce(camera.transform.forward * 50, ForceMode.Impulse);
         }
     }
 
     public void TagPerson()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (Input.GetKeyDown(KeyCode.Mouse0) && isMonster)
         {
             attackObject.SetActive(true);
             Invoke("DisableAttackObject", 0.1f);
         }
+    }
+
+    public void DisableTagText()
+    {
+        TagText.SetActive(false);
     }
 
     public void DisableAttackObject()
@@ -74,6 +82,11 @@ public class PlayerMovement : MonoBehaviour
 
     public void SetIsMonster()
     {
+        if (!isMonster)
+        {
+            TagText.SetActive(true);
+            Invoke("DisableTagText", 1.5f);
+        }
         isMonster = !isMonster;
     }
 
@@ -117,9 +130,8 @@ public class PlayerMovement : MonoBehaviour
         if (other.CompareTag("Attack"))
         {
             GameManager.instance.TagPlayer(gameObject);
-            other.gameObject.transform.parent.GetComponent<PlayerMovement>().SetIsMonster();
+            other.gameObject.GetComponent<PlayerMovement>().SetIsMonster();
             SetIsMonster();
-            Debug.Log("Is Tagged");
         }
     }
 }
