@@ -304,8 +304,9 @@ MonoBehaviour:
   usingReflection: 0
   coherenceTag: 
   componentActions:
-  - rid: 7577078009521242125
-  - rid: 7577078023613317124
+  - rid: 7577078023613317125
+  - rid: 7577078023613317126
+  - rid: 7577078023613317127
   references:
     version: 2
     RefIds:
@@ -403,10 +404,6 @@ MonoBehaviour:
             Coherence.Toolkit, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
         oldName: 
         oldParameterAssemblyTypes: []
-    - rid: 7577078009521242125
-      type: {class: DisableBehaviourComponentAction, ns: Coherence.Toolkit.ComponentActions, asm: Coherence.Toolkit}
-      data:
-        component: {fileID: 2142530943123628349}
     - rid: 7577078023613317120
       type: {class: DeepPositionBinding, ns: Coherence.Toolkit.Bindings.TransformBindings, asm: Coherence.Toolkit}
       data:
@@ -499,10 +496,18 @@ MonoBehaviour:
             Coherence.Toolkit, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
         oldName: 
         oldParameterAssemblyTypes: []
-    - rid: 7577078023613317124
+    - rid: 7577078023613317125
       type: {class: DisableBehaviourComponentAction, ns: Coherence.Toolkit.ComponentActions, asm: Coherence.Toolkit}
       data:
         component: {fileID: 646794876}
+    - rid: 7577078023613317126
+      type: {class: DisableBehaviourComponentAction, ns: Coherence.Toolkit.ComponentActions, asm: Coherence.Toolkit}
+      data:
+        component: {fileID: 646794875}
+    - rid: 7577078023613317127
+      type: {class: DisableBehaviourComponentAction, ns: Coherence.Toolkit.ComponentActions, asm: Coherence.Toolkit}
+      data:
+        component: {fileID: 2142530943123628349}
 --- !u!114 &2142530943123628349
 MonoBehaviour:
   m_ObjectHideFlags: 0
