@@ -15,3 +15,5 @@ archetype Player_7704fb97ad8c64b28a3b6f9053338e64
     WorldOrientation 
       value [bits "32"]
 
+input GameManager
+
