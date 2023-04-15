@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 8143915094630907383}
   - component: {fileID: 8143915094630907382}
   - component: {fileID: 2091765804398196532}
-  - component: {fileID: 8659487833175811422}
-  - component: {fileID: 429724773554002137}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -107,11 +105,11 @@ MonoBehaviour:
   InterpolationLocation: 1
   bakedScriptType: Coherence.Generated.CoherenceSyncGameManager_id1, Assembly-CSharp
   approveAuthorityTransferRequests: 1
-  simulationType: 3
-  authorityTransferType: 2
+  simulationType: 2
+  authorityTransferType: 0
   orphanedBehavior: 0
   lifetimeType: 0
-  uniquenessType: 1
+  uniquenessType: 0
   coherenceUUID: 523a3d4c-0eb9-45cc-9c2c-e9a10b80770d
   destructionBehavior: 0
   preserveChildren: 0
@@ -315,35 +313,3 @@ MonoBehaviour:
       type: {class: DisableBehaviourComponentAction, ns: Coherence.Toolkit.ComponentActions, asm: Coherence.Toolkit}
       data:
         component: {fileID: 8143915094630907382}
---- !u!114 &8659487833175811422
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8143915094630907380}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4dc97a814921d461188a38ca20db6787, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InitialBufferSize: 32
-  InitialBufferDelay: 3
-  DisconnectOnTimeReset: 0
-  DestroyOnInputAuthorityDisconnected: 1
-  UseFixedSimulationFrames: 0
-  inputName: GameManager
-  fields: []
---- !u!114 &429724773554002137
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8143915094630907380}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65d470e57c013458981031cae99a354f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  autoAssignOnSceneInstances: 0
