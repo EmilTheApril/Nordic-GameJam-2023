@@ -10,6 +10,8 @@ component Player_id0_UnityEngine__char_46_Transform_6549551179320053454
   rotation Quaternion [bits "32"]
   localScale Vector3 [compression "None"]
 
+command Player_id0_PlayerMovement__char_46_TagPerson_65889472_042b_489a_a11a_229914edd0d0 [routing "All"]
+
 command Player_id0_PlayerTimer__char_46_SetGameManagerTime_9afdbe10_9e09_4007_8d36_d24e6e5bffab [routing "AuthorityOnly"]
 
 command Player_id0_PlayerTimer__char_46_SetTime_a658414d_2522_48ae_af9d_4ab558a1a4b0 [routing "AuthorityOnly"]

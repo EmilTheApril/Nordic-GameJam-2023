@@ -16,7 +16,7 @@ namespace Coherence.Generated
 
 	public class Definition : IDefinition
 	{
-		public const string schemaId = "915a7abf97abe00739724584e41f9b65fe8a1552";
+		public const string schemaId = "c082582bedf3479d5badaa8aa71f80ebac081074";
 		public const uint InternalWorldPosition = 0;
 		public const uint InternalWorldOrientation = 1;
 		public const uint InternalLocalUser = 2;
@@ -133,8 +133,9 @@ namespace Coherence.Generated
 		public const uint InternalAdoptOrphan = 3;
 		public const uint InternalPersistenceReady = 4;
 		public const uint InternalGenericCommand = 5;
-		public const uint InternalPlayer_id0_PlayerTimer__char_46_SetGameManagerTime_9afdbe10_9e09_4007_8d36_d24e6e5bffab = 6;
-		public const uint InternalPlayer_id0_PlayerTimer__char_46_SetTime_a658414d_2522_48ae_af9d_4ab558a1a4b0 = 7;
+		public const uint InternalPlayer_id0_PlayerMovement__char_46_TagPerson_65889472_042b_489a_a11a_229914edd0d0 = 6;
+		public const uint InternalPlayer_id0_PlayerTimer__char_46_SetGameManagerTime_9afdbe10_9e09_4007_8d36_d24e6e5bffab = 7;
+		public const uint InternalPlayer_id0_PlayerTimer__char_46_SetTime_a658414d_2522_48ae_af9d_4ab558a1a4b0 = 8;
 
 		private static readonly Dictionary<uint, string> componentNamesForTypeIds = new Dictionary<uint, string>() {
 			{ 0, "WorldPosition" },
@@ -832,6 +833,8 @@ namespace Coherence.Generated
 					return PersistenceReady.Deserialize(bitStream);
 				case Definition.InternalGenericCommand:
 					return GenericCommand.Deserialize(bitStream);
+				case Definition.InternalPlayer_id0_PlayerMovement__char_46_TagPerson_65889472_042b_489a_a11a_229914edd0d0:
+					return Player_id0_PlayerMovement__char_46_TagPerson_65889472_042b_489a_a11a_229914edd0d0.Deserialize(bitStream);
 				case Definition.InternalPlayer_id0_PlayerTimer__char_46_SetGameManagerTime_9afdbe10_9e09_4007_8d36_d24e6e5bffab:
 					return Player_id0_PlayerTimer__char_46_SetGameManagerTime_9afdbe10_9e09_4007_8d36_d24e6e5bffab.Deserialize(bitStream);
 				case Definition.InternalPlayer_id0_PlayerTimer__char_46_SetTime_a658414d_2522_48ae_af9d_4ab558a1a4b0:
@@ -914,6 +917,9 @@ namespace Coherence.Generated
 					break;
 				case Definition.InternalGenericCommand:
 					GenericCommand.Serialize((GenericCommand)data, bitStream);
+					break;
+				case Definition.InternalPlayer_id0_PlayerMovement__char_46_TagPerson_65889472_042b_489a_a11a_229914edd0d0:
+					Player_id0_PlayerMovement__char_46_TagPerson_65889472_042b_489a_a11a_229914edd0d0.Serialize((Player_id0_PlayerMovement__char_46_TagPerson_65889472_042b_489a_a11a_229914edd0d0)data, bitStream);
 					break;
 				case Definition.InternalPlayer_id0_PlayerTimer__char_46_SetGameManagerTime_9afdbe10_9e09_4007_8d36_d24e6e5bffab:
 					Player_id0_PlayerTimer__char_46_SetGameManagerTime_9afdbe10_9e09_4007_8d36_d24e6e5bffab.Serialize((Player_id0_PlayerTimer__char_46_SetGameManagerTime_9afdbe10_9e09_4007_8d36_d24e6e5bffab)data, bitStream);

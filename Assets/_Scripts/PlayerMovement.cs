@@ -24,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
+        attackObject.SetActive(false);
         rb = GetComponent<Rigidbody>();
         TagText = GameObject.FindGameObjectWithTag("TagText");
         if (TagText != null)

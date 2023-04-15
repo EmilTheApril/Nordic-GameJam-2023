@@ -316,6 +316,7 @@ namespace Coherence.Generated
 		private Logger logger;
 
 		// Cached targets for commands		
+		private PlayerMovement Player_id0_PlayerMovement__char_46_TagPerson_65889472_042b_489a_a11a_229914edd0d0_CommandTarget;		
 		private PlayerTimer Player_id0_PlayerTimer__char_46_SetGameManagerTime_9afdbe10_9e09_4007_8d36_d24e6e5bffab_CommandTarget;		
 		private PlayerTimer Player_id0_PlayerTimer__char_46_SetTime_a658414d_2522_48ae_af9d_4ab558a1a4b0_CommandTarget;
 
@@ -328,6 +329,16 @@ namespace Coherence.Generated
 			coherenceSync.usingReflection = false;
 
 			logger = coherenceSync.logger.With<CoherenceSyncPlayer_id0>();
+			if (coherenceSync.TryGetBindingByGuid("65889472-042b-489a-a11a-229914edd0d0", "TagPerson", out Binding Player_id0_PlayerMovement__char_46_TagPerson_65889472_042b_489a_a11a_229914edd0d0))
+			{
+				Player_id0_PlayerMovement__char_46_TagPerson_65889472_042b_489a_a11a_229914edd0d0_CommandTarget = (PlayerMovement)Player_id0_PlayerMovement__char_46_TagPerson_65889472_042b_489a_a11a_229914edd0d0.UnityComponent;
+				coherenceSync.AddCommandRequestDelegate("PlayerMovement.TagPerson", "()",
+				SendCommand_Player_id0_PlayerMovement__char_46_TagPerson_65889472_042b_489a_a11a_229914edd0d0, ReceiveLocalCommand_Player_id0_PlayerMovement__char_46_TagPerson_65889472_042b_489a_a11a_229914edd0d0, MessageTarget.All, Player_id0_PlayerMovement__char_46_TagPerson_65889472_042b_489a_a11a_229914edd0d0_CommandTarget,false);
+			}
+			else
+			{
+				logger.Error("Couldn't find command binding (TagPerson)");
+			}
 			if (coherenceSync.TryGetBindingByGuid("9afdbe10-9e09-4007-8d36-d24e6e5bffab", "SetGameManagerTime", out Binding Player_id0_PlayerTimer__char_46_SetGameManagerTime_9afdbe10_9e09_4007_8d36_d24e6e5bffab))
 			{
 				Player_id0_PlayerTimer__char_46_SetGameManagerTime_9afdbe10_9e09_4007_8d36_d24e6e5bffab_CommandTarget = (PlayerTimer)Player_id0_PlayerTimer__char_46_SetGameManagerTime_9afdbe10_9e09_4007_8d36_d24e6e5bffab.UnityComponent;
@@ -460,6 +471,23 @@ namespace Coherence.Generated
 			}
 			this.client = client;
 		}
+		void SendCommand_Player_id0_PlayerMovement__char_46_TagPerson_65889472_042b_489a_a11a_229914edd0d0(MessageTarget target, object[] args)
+		{
+			var command = new Player_id0_PlayerMovement__char_46_TagPerson_65889472_042b_489a_a11a_229914edd0d0();
+			client.SendCommand(command, target, coherenceSync.EntityID);
+		}
+
+		void ReceiveLocalCommand_Player_id0_PlayerMovement__char_46_TagPerson_65889472_042b_489a_a11a_229914edd0d0(MessageTarget target, object[] args)
+		{
+			var command = new Player_id0_PlayerMovement__char_46_TagPerson_65889472_042b_489a_a11a_229914edd0d0();
+			ReceiveCommand_Player_id0_PlayerMovement__char_46_TagPerson_65889472_042b_489a_a11a_229914edd0d0(command);
+		}
+
+		void ReceiveCommand_Player_id0_PlayerMovement__char_46_TagPerson_65889472_042b_489a_a11a_229914edd0d0(Player_id0_PlayerMovement__char_46_TagPerson_65889472_042b_489a_a11a_229914edd0d0 command)
+		{
+			var target = Player_id0_PlayerMovement__char_46_TagPerson_65889472_042b_489a_a11a_229914edd0d0_CommandTarget;
+			target.TagPerson();
+		}
 		void SendCommand_Player_id0_PlayerTimer__char_46_SetGameManagerTime_9afdbe10_9e09_4007_8d36_d24e6e5bffab(MessageTarget target, object[] args)
 		{
 			var command = new Player_id0_PlayerTimer__char_46_SetGameManagerTime_9afdbe10_9e09_4007_8d36_d24e6e5bffab();
@@ -503,6 +531,9 @@ namespace Coherence.Generated
 		{
 			switch(command)
 			{
+				case Player_id0_PlayerMovement__char_46_TagPerson_65889472_042b_489a_a11a_229914edd0d0 castedCommand:
+					ReceiveCommand_Player_id0_PlayerMovement__char_46_TagPerson_65889472_042b_489a_a11a_229914edd0d0(castedCommand);
+					break;
 				case Player_id0_PlayerTimer__char_46_SetGameManagerTime_9afdbe10_9e09_4007_8d36_d24e6e5bffab castedCommand:
 					ReceiveCommand_Player_id0_PlayerTimer__char_46_SetGameManagerTime_9afdbe10_9e09_4007_8d36_d24e6e5bffab(castedCommand);
 					break;
