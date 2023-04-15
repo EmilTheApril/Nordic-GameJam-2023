@@ -764,8 +764,8 @@ namespace Coherence.Generated
 
 		public override SerializeEntityID Value
 		{
-			get => (SerializeEntityID)coherenceSync.MonoBridge.UnityObjectToEntityId(CastedUnityComponent.lightProbeAnchor);
-			set => CastedUnityComponent.lightProbeAnchor = coherenceSync.MonoBridge.EntityIdToTransform(value);
+			get => (SerializeEntityID)coherenceSync.MonoBridge.UnityObjectToEntityId(CastedUnityComponent.probeAnchor);
+			set => CastedUnityComponent.probeAnchor = coherenceSync.MonoBridge.EntityIdToTransform(value);
 		}
 
 		protected override SerializeEntityID ReadComponentData(ICoherenceComponentData coherenceComponent)
