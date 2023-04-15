@@ -1245,10 +1245,11 @@ GameObject:
   - component: {fileID: 6270348497196006384}
   - component: {fileID: 3364310959788457435}
   - component: {fileID: 1938517769589058593}
+  - component: {fileID: 1981943840567498374}
   - component: {fileID: 5950757732178964030}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1373,6 +1374,19 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &1981943840567498374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6338119257385309782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a641a1626f7a4649b0a39858b756f94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeLeft: 120
 --- !u!114 &5950757732178964030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1540,6 +1554,8 @@ MonoBehaviour:
       lodStepsActive: 1
     - component: {fileID: 5033182649241798056}
       lodStepsActive: 1
+    - component: {fileID: 1981943840567498374}
+      lodStepsActive: 1
     lodLevels:
     - distance: 0
     archetypeName: Player_7704fb97ad8c64b28a3b6f9053338e64
@@ -1578,6 +1594,7 @@ MonoBehaviour:
   - rid: 7577078024608677997
   - rid: 7577078024608677998
   - rid: 7577078024608677999
+  - rid: 7577078024608678032
   references:
     version: 2
     RefIds:
@@ -1687,6 +1704,10 @@ MonoBehaviour:
       type: {class: DisableBehaviourComponentAction, ns: Coherence.Toolkit.ComponentActions, asm: Coherence.Toolkit}
       data:
         component: {fileID: 6243508568682969498}
+    - rid: 7577078024608678032
+      type: {class: DisableBehaviourComponentAction, ns: Coherence.Toolkit.ComponentActions, asm: Coherence.Toolkit}
+      data:
+        component: {fileID: 8509108052325911209}
 --- !u!1 &6338128971595819114
 GameObject:
   m_ObjectHideFlags: 0
