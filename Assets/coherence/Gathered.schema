@@ -1,20 +1,7 @@
-command GameManager_id1_GameManager__char_46_GameEnd_730e0f9a_0e03_49c4_b149_ad680d0cbfac [routing "All"]
-
-command GameManager_id1_GameManager__char_46_SetTime_90d2cd17_de07_4dc3_a195_c28e55d09bed [routing "All"]
-  time Float [compression "None"]
-  player Entity 
-
-command GameManager_id1_GameManager__char_46_StartGame_5ffbb695_01f1_4793_be8f_3f05337bc655 [routing "All"]
-
 command Player_id0_PlayerTimer__char_46_SetGameManagerTime_9afdbe10_9e09_4007_8d36_d24e6e5bffab [routing "AuthorityOnly"]
 
 command Player_id0_PlayerTimer__char_46_SetTime_a658414d_2522_48ae_af9d_4ab558a1a4b0 [routing "AuthorityOnly"]
   time Float [compression "None"]
-
-archetype GameManager_25066ca7913364f2f9c66eac585b7269
-  lod 0
-    WorldPosition 
-      value [compression "None"]
 
 archetype Player_7704fb97ad8c64b28a3b6f9053338e64
   lod 0
