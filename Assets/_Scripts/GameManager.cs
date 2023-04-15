@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
     [SerializeField] private CounterScript counterScript;
-    private float time = 10;
+    private float time = 5;
     private GameObject player;
 
     [SerializeField] private int playersNeededToStart;
@@ -68,16 +68,6 @@ public class GameManager : MonoBehaviour
 
     public void StartGame()
     {
-        GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
-
-        if (!gameStarted)
-        {
-            foreach (GameObject player in players)
-            {
-                player.GetComponent<PlayerMovement>().SendDisableAttackCommand();
-            }
-        }
-
         if (playerCount < playersNeededToStart && !gameStarted)
         {
             playerCount = GameObject.FindGameObjectsWithTag("Player").Length;
@@ -96,7 +86,13 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log("Ups");
             gameStarted = true;
+            GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
             int rnd = Random.Range(0, players.Length);
+
+            foreach (GameObject player in players)
+            {
+                player.GetComponent<PlayerMovement>().SendDisableAttackCommand();
+            }
 
             players[rnd].GetComponent<PlayerTimer>().SetGameManagerTime();
             players[rnd].GetComponent<PlayerMovement>().SetIsMonster();
