@@ -195,6 +195,709 @@ namespace Coherence.Generated
 		}
 	}
 
+	public class Binding_7704fb97ad8c64b28a3b6f9053338e64_d66792e4_433f_41de_826b_006aa3632c02 : FloatBinding
+	{
+		private UnityEngine.MeshRenderer CastedUnityComponent;		
+
+		protected override void OnBindingCloned()
+		{
+			CastedUnityComponent = (UnityEngine.MeshRenderer)UnityComponent;
+		}
+		public override string CoherenceComponentName => "Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903";
+
+		public override uint FieldMask => 0b00000000000000000000000000000010;
+
+		public override float Value
+		{
+			get => (float)(System.Single)(CastedUnityComponent.scaleInLightmap);
+			set => CastedUnityComponent.scaleInLightmap = (System.Single)(value);
+		}
+
+		protected override float ReadComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903)coherenceComponent;
+			return update.scaleInLightmap;
+		}
+		
+		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903)coherenceComponent;
+			update.scaleInLightmap = Value;
+			return update;
+		}
+
+		public override ICoherenceComponentData CreateComponentData()
+		{
+			return new Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903();
+		}
+	}
+
+	public class Binding_7704fb97ad8c64b28a3b6f9053338e64_b0bb9328_a276_4afc_b184_f714657d129e : BoolBinding
+	{
+		private UnityEngine.MeshRenderer CastedUnityComponent;		
+
+		protected override void OnBindingCloned()
+		{
+			CastedUnityComponent = (UnityEngine.MeshRenderer)UnityComponent;
+		}
+		public override string CoherenceComponentName => "Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903";
+
+		public override uint FieldMask => 0b00000000000000000000000000000100;
+
+		public override bool Value
+		{
+			get => (bool)(System.Boolean)(CastedUnityComponent.stitchLightmapSeams);
+			set => CastedUnityComponent.stitchLightmapSeams = (System.Boolean)(value);
+		}
+
+		protected override bool ReadComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903)coherenceComponent;
+			return update.stitchLightmapSeams;
+		}
+		
+		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903)coherenceComponent;
+			update.stitchLightmapSeams = Value;
+			return update;
+		}
+
+		public override ICoherenceComponentData CreateComponentData()
+		{
+			return new Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903();
+		}
+	}
+
+	public class Binding_7704fb97ad8c64b28a3b6f9053338e64_3be2ec7f_8ab1_401b_9ec5_bbee83919816 : BoolBinding
+	{
+		private UnityEngine.MeshRenderer CastedUnityComponent;		
+
+		protected override void OnBindingCloned()
+		{
+			CastedUnityComponent = (UnityEngine.MeshRenderer)UnityComponent;
+		}
+		public override string CoherenceComponentName => "Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903";
+
+		public override uint FieldMask => 0b00000000000000000000000000001000;
+
+		public override bool Value
+		{
+			get => (bool)(System.Boolean)(CastedUnityComponent.receiveShadows);
+			set => CastedUnityComponent.receiveShadows = (System.Boolean)(value);
+		}
+
+		protected override bool ReadComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903)coherenceComponent;
+			return update.receiveShadows;
+		}
+		
+		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903)coherenceComponent;
+			update.receiveShadows = Value;
+			return update;
+		}
+
+		public override ICoherenceComponentData CreateComponentData()
+		{
+			return new Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903();
+		}
+	}
+
+	public class Binding_7704fb97ad8c64b28a3b6f9053338e64_5bc84f38_f5df_492b_8686_82c713f1272a : BoolBinding
+	{
+		private UnityEngine.MeshRenderer CastedUnityComponent;		
+
+		protected override void OnBindingCloned()
+		{
+			CastedUnityComponent = (UnityEngine.MeshRenderer)UnityComponent;
+		}
+		public override string CoherenceComponentName => "Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903";
+
+		public override uint FieldMask => 0b00000000000000000000000000010000;
+
+		public override bool Value
+		{
+			get => (bool)(System.Boolean)(CastedUnityComponent.forceRenderingOff);
+			set => CastedUnityComponent.forceRenderingOff = (System.Boolean)(value);
+		}
+
+		protected override bool ReadComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903)coherenceComponent;
+			return update.forceRenderingOff;
+		}
+		
+		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903)coherenceComponent;
+			update.forceRenderingOff = Value;
+			return update;
+		}
+
+		public override ICoherenceComponentData CreateComponentData()
+		{
+			return new Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903();
+		}
+	}
+
+	public class Binding_7704fb97ad8c64b28a3b6f9053338e64_aed065e6_419e_4ac1_87ec_431bc3a2ad7f : BoolBinding
+	{
+		private UnityEngine.MeshRenderer CastedUnityComponent;		
+
+		protected override void OnBindingCloned()
+		{
+			CastedUnityComponent = (UnityEngine.MeshRenderer)UnityComponent;
+		}
+		public override string CoherenceComponentName => "Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903";
+
+		public override uint FieldMask => 0b00000000000000000000000000100000;
+
+		public override bool Value
+		{
+			get => (bool)(System.Boolean)(CastedUnityComponent.staticShadowCaster);
+			set => CastedUnityComponent.staticShadowCaster = (System.Boolean)(value);
+		}
+
+		protected override bool ReadComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903)coherenceComponent;
+			return update.staticShadowCaster;
+		}
+		
+		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903)coherenceComponent;
+			update.staticShadowCaster = Value;
+			return update;
+		}
+
+		public override ICoherenceComponentData CreateComponentData()
+		{
+			return new Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903();
+		}
+	}
+
+	public class Binding_7704fb97ad8c64b28a3b6f9053338e64_f2b9962f_ad3b_4655_99ad_bf89a7ba487c : UIntBinding
+	{
+		private UnityEngine.MeshRenderer CastedUnityComponent;		
+
+		protected override void OnBindingCloned()
+		{
+			CastedUnityComponent = (UnityEngine.MeshRenderer)UnityComponent;
+		}
+		public override string CoherenceComponentName => "Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903";
+
+		public override uint FieldMask => 0b00000000000000000000000001000000;
+
+		public override uint Value
+		{
+			get => (uint)(System.UInt32)(CastedUnityComponent.renderingLayerMask);
+			set => CastedUnityComponent.renderingLayerMask = (System.UInt32)(value);
+		}
+
+		protected override uint ReadComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903)coherenceComponent;
+			return update.renderingLayerMask;
+		}
+		
+		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903)coherenceComponent;
+			update.renderingLayerMask = Value;
+			return update;
+		}
+
+		public override ICoherenceComponentData CreateComponentData()
+		{
+			return new Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903();
+		}
+	}
+
+	public class Binding_7704fb97ad8c64b28a3b6f9053338e64_eada1a49_0bb4_4ed9_938d_3d3a8b217897 : IntBinding
+	{
+		private UnityEngine.MeshRenderer CastedUnityComponent;		
+
+		protected override void OnBindingCloned()
+		{
+			CastedUnityComponent = (UnityEngine.MeshRenderer)UnityComponent;
+		}
+		public override string CoherenceComponentName => "Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903";
+
+		public override uint FieldMask => 0b00000000000000000000000010000000;
+
+		public override int Value
+		{
+			get => (int)(System.Int32)(CastedUnityComponent.rendererPriority);
+			set => CastedUnityComponent.rendererPriority = (System.Int32)(value);
+		}
+
+		protected override int ReadComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903)coherenceComponent;
+			return update.rendererPriority;
+		}
+		
+		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903)coherenceComponent;
+			update.rendererPriority = Value;
+			return update;
+		}
+
+		public override ICoherenceComponentData CreateComponentData()
+		{
+			return new Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903();
+		}
+	}
+
+	public class Binding_7704fb97ad8c64b28a3b6f9053338e64_150eac75_ad11_47c6_bb95_7fe5849af570 : StringBinding
+	{
+		private UnityEngine.MeshRenderer CastedUnityComponent;		
+
+		protected override void OnBindingCloned()
+		{
+			CastedUnityComponent = (UnityEngine.MeshRenderer)UnityComponent;
+		}
+		public override string CoherenceComponentName => "Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903";
+
+		public override uint FieldMask => 0b00000000000000000000000100000000;
+
+		public override string Value
+		{
+			get => (string)(System.String)(CastedUnityComponent.sortingLayerName);
+			set => CastedUnityComponent.sortingLayerName = (System.String)(value);
+		}
+
+		protected override string ReadComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903)coherenceComponent;
+			return update.sortingLayerName;
+		}
+		
+		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903)coherenceComponent;
+			update.sortingLayerName = Value;
+			return update;
+		}
+
+		public override ICoherenceComponentData CreateComponentData()
+		{
+			return new Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903();
+		}
+	}
+
+	public class Binding_7704fb97ad8c64b28a3b6f9053338e64_ead9acdd_dab1_4cb5_8849_59b4cdd43b5a : IntBinding
+	{
+		private UnityEngine.MeshRenderer CastedUnityComponent;		
+
+		protected override void OnBindingCloned()
+		{
+			CastedUnityComponent = (UnityEngine.MeshRenderer)UnityComponent;
+		}
+		public override string CoherenceComponentName => "Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903";
+
+		public override uint FieldMask => 0b00000000000000000000001000000000;
+
+		public override int Value
+		{
+			get => (int)(System.Int32)(CastedUnityComponent.sortingLayerID);
+			set => CastedUnityComponent.sortingLayerID = (System.Int32)(value);
+		}
+
+		protected override int ReadComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903)coherenceComponent;
+			return update.sortingLayerID;
+		}
+		
+		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903)coherenceComponent;
+			update.sortingLayerID = Value;
+			return update;
+		}
+
+		public override ICoherenceComponentData CreateComponentData()
+		{
+			return new Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903();
+		}
+	}
+
+	public class Binding_7704fb97ad8c64b28a3b6f9053338e64_e8e65757_1e36_4f35_9364_8b51530bca8c : IntBinding
+	{
+		private UnityEngine.MeshRenderer CastedUnityComponent;		
+
+		protected override void OnBindingCloned()
+		{
+			CastedUnityComponent = (UnityEngine.MeshRenderer)UnityComponent;
+		}
+		public override string CoherenceComponentName => "Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903";
+
+		public override uint FieldMask => 0b00000000000000000000010000000000;
+
+		public override int Value
+		{
+			get => (int)(System.Int32)(CastedUnityComponent.sortingOrder);
+			set => CastedUnityComponent.sortingOrder = (System.Int32)(value);
+		}
+
+		protected override int ReadComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903)coherenceComponent;
+			return update.sortingOrder;
+		}
+		
+		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903)coherenceComponent;
+			update.sortingOrder = Value;
+			return update;
+		}
+
+		public override ICoherenceComponentData CreateComponentData()
+		{
+			return new Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903();
+		}
+	}
+
+	public class Binding_7704fb97ad8c64b28a3b6f9053338e64_493af7cf_c996_4b26_a8cd_f3db9eecbd45 : BoolBinding
+	{
+		private UnityEngine.MeshRenderer CastedUnityComponent;		
+
+		protected override void OnBindingCloned()
+		{
+			CastedUnityComponent = (UnityEngine.MeshRenderer)UnityComponent;
+		}
+		public override string CoherenceComponentName => "Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903";
+
+		public override uint FieldMask => 0b00000000000000000000100000000000;
+
+		public override bool Value
+		{
+			get => (bool)(System.Boolean)(CastedUnityComponent.allowOcclusionWhenDynamic);
+			set => CastedUnityComponent.allowOcclusionWhenDynamic = (System.Boolean)(value);
+		}
+
+		protected override bool ReadComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903)coherenceComponent;
+			return update.allowOcclusionWhenDynamic;
+		}
+		
+		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903)coherenceComponent;
+			update.allowOcclusionWhenDynamic = Value;
+			return update;
+		}
+
+		public override ICoherenceComponentData CreateComponentData()
+		{
+			return new Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903();
+		}
+	}
+
+	public class Binding_7704fb97ad8c64b28a3b6f9053338e64_1f49a629_4cd0_44af_9cfb_df9b12c73a2a : ReferenceBinding
+	{
+		private UnityEngine.MeshRenderer CastedUnityComponent;		
+
+		protected override void OnBindingCloned()
+		{
+			CastedUnityComponent = (UnityEngine.MeshRenderer)UnityComponent;
+		}
+		public override string CoherenceComponentName => "Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903";
+
+		public override uint FieldMask => 0b00000000000000000001000000000000;
+
+		public override SerializeEntityID Value
+		{
+			get => (SerializeEntityID)coherenceSync.MonoBridge.UnityObjectToEntityId(CastedUnityComponent.lightProbeProxyVolumeOverride);
+			set => CastedUnityComponent.lightProbeProxyVolumeOverride = coherenceSync.MonoBridge.EntityIdToGameObject(value);
+		}
+
+		protected override SerializeEntityID ReadComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903)coherenceComponent;
+			return update.lightProbeProxyVolumeOverride;
+		}
+		
+		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903)coherenceComponent;
+			update.lightProbeProxyVolumeOverride = Value;
+			return update;
+		}
+
+		public override ICoherenceComponentData CreateComponentData()
+		{
+			return new Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903();
+		}
+	}
+
+	public class Binding_7704fb97ad8c64b28a3b6f9053338e64_03aa49bd_c169_4b51_b2d1_f80a95140a26 : ReferenceBinding
+	{
+		private UnityEngine.MeshRenderer CastedUnityComponent;		
+
+		protected override void OnBindingCloned()
+		{
+			CastedUnityComponent = (UnityEngine.MeshRenderer)UnityComponent;
+		}
+		public override string CoherenceComponentName => "Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903";
+
+		public override uint FieldMask => 0b00000000000000000010000000000000;
+
+		public override SerializeEntityID Value
+		{
+			get => (SerializeEntityID)coherenceSync.MonoBridge.UnityObjectToEntityId(CastedUnityComponent.probeAnchor);
+			set => CastedUnityComponent.probeAnchor = coherenceSync.MonoBridge.EntityIdToTransform(value);
+		}
+
+		protected override SerializeEntityID ReadComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903)coherenceComponent;
+			return update.probeAnchor;
+		}
+		
+		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903)coherenceComponent;
+			update.probeAnchor = Value;
+			return update;
+		}
+
+		public override ICoherenceComponentData CreateComponentData()
+		{
+			return new Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903();
+		}
+	}
+
+	public class Binding_7704fb97ad8c64b28a3b6f9053338e64_8f6ae369_5000_4ecd_b685_7e7b013a1d06 : IntBinding
+	{
+		private UnityEngine.MeshRenderer CastedUnityComponent;		
+
+		protected override void OnBindingCloned()
+		{
+			CastedUnityComponent = (UnityEngine.MeshRenderer)UnityComponent;
+		}
+		public override string CoherenceComponentName => "Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903";
+
+		public override uint FieldMask => 0b00000000000000000100000000000000;
+
+		public override int Value
+		{
+			get => (int)(System.Int32)(CastedUnityComponent.lightmapIndex);
+			set => CastedUnityComponent.lightmapIndex = (System.Int32)(value);
+		}
+
+		protected override int ReadComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903)coherenceComponent;
+			return update.lightmapIndex;
+		}
+		
+		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903)coherenceComponent;
+			update.lightmapIndex = Value;
+			return update;
+		}
+
+		public override ICoherenceComponentData CreateComponentData()
+		{
+			return new Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903();
+		}
+	}
+
+	public class Binding_7704fb97ad8c64b28a3b6f9053338e64_738f64cb_937b_4f89_8c98_27b205bc96fd : IntBinding
+	{
+		private UnityEngine.MeshRenderer CastedUnityComponent;		
+
+		protected override void OnBindingCloned()
+		{
+			CastedUnityComponent = (UnityEngine.MeshRenderer)UnityComponent;
+		}
+		public override string CoherenceComponentName => "Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903";
+
+		public override uint FieldMask => 0b00000000000000001000000000000000;
+
+		public override int Value
+		{
+			get => (int)(System.Int32)(CastedUnityComponent.realtimeLightmapIndex);
+			set => CastedUnityComponent.realtimeLightmapIndex = (System.Int32)(value);
+		}
+
+		protected override int ReadComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903)coherenceComponent;
+			return update.realtimeLightmapIndex;
+		}
+		
+		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903)coherenceComponent;
+			update.realtimeLightmapIndex = Value;
+			return update;
+		}
+
+		public override ICoherenceComponentData CreateComponentData()
+		{
+			return new Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903();
+		}
+	}
+
+	public class Binding_7704fb97ad8c64b28a3b6f9053338e64_a95c6d02_c94b_4221_a087_c1ff5375ef8c : ReferenceBinding
+	{
+		private UnityEngine.MeshRenderer CastedUnityComponent;		
+
+		protected override void OnBindingCloned()
+		{
+			CastedUnityComponent = (UnityEngine.MeshRenderer)UnityComponent;
+		}
+		public override string CoherenceComponentName => "Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903";
+
+		public override uint FieldMask => 0b00000000000000010000000000000000;
+
+		public override SerializeEntityID Value
+		{
+			get => (SerializeEntityID)coherenceSync.MonoBridge.UnityObjectToEntityId(CastedUnityComponent.lightProbeAnchor);
+			set => CastedUnityComponent.lightProbeAnchor = coherenceSync.MonoBridge.EntityIdToTransform(value);
+		}
+
+		protected override SerializeEntityID ReadComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903)coherenceComponent;
+			return update.lightProbeAnchor;
+		}
+		
+		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903)coherenceComponent;
+			update.lightProbeAnchor = Value;
+			return update;
+		}
+
+		public override ICoherenceComponentData CreateComponentData()
+		{
+			return new Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903();
+		}
+	}
+
+	public class Binding_7704fb97ad8c64b28a3b6f9053338e64_c9e85c54_5f90_4167_9ef2_2adc05388923 : BoolBinding
+	{
+		private UnityEngine.MeshRenderer CastedUnityComponent;		
+
+		protected override void OnBindingCloned()
+		{
+			CastedUnityComponent = (UnityEngine.MeshRenderer)UnityComponent;
+		}
+		public override string CoherenceComponentName => "Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903";
+
+		public override uint FieldMask => 0b00000000000000100000000000000000;
+
+		public override bool Value
+		{
+			get => (bool)(System.Boolean)(CastedUnityComponent.castShadows);
+			set => CastedUnityComponent.castShadows = (System.Boolean)(value);
+		}
+
+		protected override bool ReadComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903)coherenceComponent;
+			return update.castShadows;
+		}
+		
+		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903)coherenceComponent;
+			update.castShadows = Value;
+			return update;
+		}
+
+		public override ICoherenceComponentData CreateComponentData()
+		{
+			return new Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903();
+		}
+	}
+
+	public class Binding_7704fb97ad8c64b28a3b6f9053338e64_45657a2e_ee56_4372_a122_8ff1c76a584f : BoolBinding
+	{
+		private UnityEngine.MeshRenderer CastedUnityComponent;		
+
+		protected override void OnBindingCloned()
+		{
+			CastedUnityComponent = (UnityEngine.MeshRenderer)UnityComponent;
+		}
+		public override string CoherenceComponentName => "Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903";
+
+		public override uint FieldMask => 0b00000000000001000000000000000000;
+
+		public override bool Value
+		{
+			get => (bool)(System.Boolean)(CastedUnityComponent.motionVectors);
+			set => CastedUnityComponent.motionVectors = (System.Boolean)(value);
+		}
+
+		protected override bool ReadComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903)coherenceComponent;
+			return update.motionVectors;
+		}
+		
+		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903)coherenceComponent;
+			update.motionVectors = Value;
+			return update;
+		}
+
+		public override ICoherenceComponentData CreateComponentData()
+		{
+			return new Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903();
+		}
+	}
+
+	public class Binding_7704fb97ad8c64b28a3b6f9053338e64_5b89f760_3709_4a6a_90dd_f66de3dace04 : BoolBinding
+	{
+		private UnityEngine.MeshRenderer CastedUnityComponent;		
+
+		protected override void OnBindingCloned()
+		{
+			CastedUnityComponent = (UnityEngine.MeshRenderer)UnityComponent;
+		}
+		public override string CoherenceComponentName => "Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903";
+
+		public override uint FieldMask => 0b00000000000010000000000000000000;
+
+		public override bool Value
+		{
+			get => (bool)(System.Boolean)(CastedUnityComponent.useLightProbes);
+			set => CastedUnityComponent.useLightProbes = (System.Boolean)(value);
+		}
+
+		protected override bool ReadComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903)coherenceComponent;
+			return update.useLightProbes;
+		}
+		
+		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903)coherenceComponent;
+			update.useLightProbes = Value;
+			return update;
+		}
+
+		public override ICoherenceComponentData CreateComponentData()
+		{
+			return new Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903();
+		}
+	}
+
 	public class Binding_7704fb97ad8c64b28a3b6f9053338e64_cffa1cb1_481e_4ef9_9f7a_645e2b35e077 : DeepPositionBinding
 	{
 		private UnityEngine.Transform CastedUnityComponent;		
@@ -408,6 +1111,196 @@ namespace Coherence.Generated
 			else
 			{
 				logger.Error("Couldn't find binding (UnityEngine.MeshRenderer).enabled");
+			}
+			if (coherenceSync.TryGetBindingByGuid("d66792e4-433f-41de-826b-006aa3632c02", "scaleInLightmap", out Binding InternalPlayer_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_scaleInLightmap))
+			{
+				var clone = new Binding_7704fb97ad8c64b28a3b6f9053338e64_d66792e4_433f_41de_826b_006aa3632c02();
+				InternalPlayer_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_scaleInLightmap.CloneTo(clone);
+				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalPlayer_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_scaleInLightmap)] = clone;
+			}
+			else
+			{
+				logger.Error("Couldn't find binding (UnityEngine.MeshRenderer).scaleInLightmap");
+			}
+			if (coherenceSync.TryGetBindingByGuid("b0bb9328-a276-4afc-b184-f714657d129e", "stitchLightmapSeams", out Binding InternalPlayer_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_stitchLightmapSeams))
+			{
+				var clone = new Binding_7704fb97ad8c64b28a3b6f9053338e64_b0bb9328_a276_4afc_b184_f714657d129e();
+				InternalPlayer_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_stitchLightmapSeams.CloneTo(clone);
+				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalPlayer_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_stitchLightmapSeams)] = clone;
+			}
+			else
+			{
+				logger.Error("Couldn't find binding (UnityEngine.MeshRenderer).stitchLightmapSeams");
+			}
+			if (coherenceSync.TryGetBindingByGuid("3be2ec7f-8ab1-401b-9ec5-bbee83919816", "receiveShadows", out Binding InternalPlayer_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_receiveShadows))
+			{
+				var clone = new Binding_7704fb97ad8c64b28a3b6f9053338e64_3be2ec7f_8ab1_401b_9ec5_bbee83919816();
+				InternalPlayer_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_receiveShadows.CloneTo(clone);
+				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalPlayer_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_receiveShadows)] = clone;
+			}
+			else
+			{
+				logger.Error("Couldn't find binding (UnityEngine.MeshRenderer).receiveShadows");
+			}
+			if (coherenceSync.TryGetBindingByGuid("5bc84f38-f5df-492b-8686-82c713f1272a", "forceRenderingOff", out Binding InternalPlayer_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_forceRenderingOff))
+			{
+				var clone = new Binding_7704fb97ad8c64b28a3b6f9053338e64_5bc84f38_f5df_492b_8686_82c713f1272a();
+				InternalPlayer_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_forceRenderingOff.CloneTo(clone);
+				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalPlayer_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_forceRenderingOff)] = clone;
+			}
+			else
+			{
+				logger.Error("Couldn't find binding (UnityEngine.MeshRenderer).forceRenderingOff");
+			}
+			if (coherenceSync.TryGetBindingByGuid("aed065e6-419e-4ac1-87ec-431bc3a2ad7f", "staticShadowCaster", out Binding InternalPlayer_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_staticShadowCaster))
+			{
+				var clone = new Binding_7704fb97ad8c64b28a3b6f9053338e64_aed065e6_419e_4ac1_87ec_431bc3a2ad7f();
+				InternalPlayer_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_staticShadowCaster.CloneTo(clone);
+				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalPlayer_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_staticShadowCaster)] = clone;
+			}
+			else
+			{
+				logger.Error("Couldn't find binding (UnityEngine.MeshRenderer).staticShadowCaster");
+			}
+			if (coherenceSync.TryGetBindingByGuid("f2b9962f-ad3b-4655-99ad-bf89a7ba487c", "renderingLayerMask", out Binding InternalPlayer_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_renderingLayerMask))
+			{
+				var clone = new Binding_7704fb97ad8c64b28a3b6f9053338e64_f2b9962f_ad3b_4655_99ad_bf89a7ba487c();
+				InternalPlayer_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_renderingLayerMask.CloneTo(clone);
+				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalPlayer_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_renderingLayerMask)] = clone;
+			}
+			else
+			{
+				logger.Error("Couldn't find binding (UnityEngine.MeshRenderer).renderingLayerMask");
+			}
+			if (coherenceSync.TryGetBindingByGuid("eada1a49-0bb4-4ed9-938d-3d3a8b217897", "rendererPriority", out Binding InternalPlayer_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_rendererPriority))
+			{
+				var clone = new Binding_7704fb97ad8c64b28a3b6f9053338e64_eada1a49_0bb4_4ed9_938d_3d3a8b217897();
+				InternalPlayer_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_rendererPriority.CloneTo(clone);
+				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalPlayer_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_rendererPriority)] = clone;
+			}
+			else
+			{
+				logger.Error("Couldn't find binding (UnityEngine.MeshRenderer).rendererPriority");
+			}
+			if (coherenceSync.TryGetBindingByGuid("150eac75-ad11-47c6-bb95-7fe5849af570", "sortingLayerName", out Binding InternalPlayer_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_sortingLayerName))
+			{
+				var clone = new Binding_7704fb97ad8c64b28a3b6f9053338e64_150eac75_ad11_47c6_bb95_7fe5849af570();
+				InternalPlayer_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_sortingLayerName.CloneTo(clone);
+				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalPlayer_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_sortingLayerName)] = clone;
+			}
+			else
+			{
+				logger.Error("Couldn't find binding (UnityEngine.MeshRenderer).sortingLayerName");
+			}
+			if (coherenceSync.TryGetBindingByGuid("ead9acdd-dab1-4cb5-8849-59b4cdd43b5a", "sortingLayerID", out Binding InternalPlayer_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_sortingLayerID))
+			{
+				var clone = new Binding_7704fb97ad8c64b28a3b6f9053338e64_ead9acdd_dab1_4cb5_8849_59b4cdd43b5a();
+				InternalPlayer_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_sortingLayerID.CloneTo(clone);
+				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalPlayer_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_sortingLayerID)] = clone;
+			}
+			else
+			{
+				logger.Error("Couldn't find binding (UnityEngine.MeshRenderer).sortingLayerID");
+			}
+			if (coherenceSync.TryGetBindingByGuid("e8e65757-1e36-4f35-9364-8b51530bca8c", "sortingOrder", out Binding InternalPlayer_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_sortingOrder))
+			{
+				var clone = new Binding_7704fb97ad8c64b28a3b6f9053338e64_e8e65757_1e36_4f35_9364_8b51530bca8c();
+				InternalPlayer_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_sortingOrder.CloneTo(clone);
+				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalPlayer_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_sortingOrder)] = clone;
+			}
+			else
+			{
+				logger.Error("Couldn't find binding (UnityEngine.MeshRenderer).sortingOrder");
+			}
+			if (coherenceSync.TryGetBindingByGuid("493af7cf-c996-4b26-a8cd-f3db9eecbd45", "allowOcclusionWhenDynamic", out Binding InternalPlayer_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_allowOcclusionWhenDynamic))
+			{
+				var clone = new Binding_7704fb97ad8c64b28a3b6f9053338e64_493af7cf_c996_4b26_a8cd_f3db9eecbd45();
+				InternalPlayer_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_allowOcclusionWhenDynamic.CloneTo(clone);
+				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalPlayer_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_allowOcclusionWhenDynamic)] = clone;
+			}
+			else
+			{
+				logger.Error("Couldn't find binding (UnityEngine.MeshRenderer).allowOcclusionWhenDynamic");
+			}
+			if (coherenceSync.TryGetBindingByGuid("1f49a629-4cd0-44af-9cfb-df9b12c73a2a", "lightProbeProxyVolumeOverride", out Binding InternalPlayer_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_lightProbeProxyVolumeOverride))
+			{
+				var clone = new Binding_7704fb97ad8c64b28a3b6f9053338e64_1f49a629_4cd0_44af_9cfb_df9b12c73a2a();
+				InternalPlayer_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_lightProbeProxyVolumeOverride.CloneTo(clone);
+				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalPlayer_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_lightProbeProxyVolumeOverride)] = clone;
+			}
+			else
+			{
+				logger.Error("Couldn't find binding (UnityEngine.MeshRenderer).lightProbeProxyVolumeOverride");
+			}
+			if (coherenceSync.TryGetBindingByGuid("03aa49bd-c169-4b51-b2d1-f80a95140a26", "probeAnchor", out Binding InternalPlayer_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_probeAnchor))
+			{
+				var clone = new Binding_7704fb97ad8c64b28a3b6f9053338e64_03aa49bd_c169_4b51_b2d1_f80a95140a26();
+				InternalPlayer_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_probeAnchor.CloneTo(clone);
+				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalPlayer_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_probeAnchor)] = clone;
+			}
+			else
+			{
+				logger.Error("Couldn't find binding (UnityEngine.MeshRenderer).probeAnchor");
+			}
+			if (coherenceSync.TryGetBindingByGuid("8f6ae369-5000-4ecd-b685-7e7b013a1d06", "lightmapIndex", out Binding InternalPlayer_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_lightmapIndex))
+			{
+				var clone = new Binding_7704fb97ad8c64b28a3b6f9053338e64_8f6ae369_5000_4ecd_b685_7e7b013a1d06();
+				InternalPlayer_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_lightmapIndex.CloneTo(clone);
+				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalPlayer_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_lightmapIndex)] = clone;
+			}
+			else
+			{
+				logger.Error("Couldn't find binding (UnityEngine.MeshRenderer).lightmapIndex");
+			}
+			if (coherenceSync.TryGetBindingByGuid("738f64cb-937b-4f89-8c98-27b205bc96fd", "realtimeLightmapIndex", out Binding InternalPlayer_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_realtimeLightmapIndex))
+			{
+				var clone = new Binding_7704fb97ad8c64b28a3b6f9053338e64_738f64cb_937b_4f89_8c98_27b205bc96fd();
+				InternalPlayer_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_realtimeLightmapIndex.CloneTo(clone);
+				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalPlayer_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_realtimeLightmapIndex)] = clone;
+			}
+			else
+			{
+				logger.Error("Couldn't find binding (UnityEngine.MeshRenderer).realtimeLightmapIndex");
+			}
+			if (coherenceSync.TryGetBindingByGuid("a95c6d02-c94b-4221-a087-c1ff5375ef8c", "lightProbeAnchor", out Binding InternalPlayer_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_lightProbeAnchor))
+			{
+				var clone = new Binding_7704fb97ad8c64b28a3b6f9053338e64_a95c6d02_c94b_4221_a087_c1ff5375ef8c();
+				InternalPlayer_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_lightProbeAnchor.CloneTo(clone);
+				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalPlayer_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_lightProbeAnchor)] = clone;
+			}
+			else
+			{
+				logger.Error("Couldn't find binding (UnityEngine.MeshRenderer).lightProbeAnchor");
+			}
+			if (coherenceSync.TryGetBindingByGuid("c9e85c54-5f90-4167-9ef2-2adc05388923", "castShadows", out Binding InternalPlayer_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_castShadows))
+			{
+				var clone = new Binding_7704fb97ad8c64b28a3b6f9053338e64_c9e85c54_5f90_4167_9ef2_2adc05388923();
+				InternalPlayer_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_castShadows.CloneTo(clone);
+				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalPlayer_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_castShadows)] = clone;
+			}
+			else
+			{
+				logger.Error("Couldn't find binding (UnityEngine.MeshRenderer).castShadows");
+			}
+			if (coherenceSync.TryGetBindingByGuid("45657a2e-ee56-4372-a122-8ff1c76a584f", "motionVectors", out Binding InternalPlayer_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_motionVectors))
+			{
+				var clone = new Binding_7704fb97ad8c64b28a3b6f9053338e64_45657a2e_ee56_4372_a122_8ff1c76a584f();
+				InternalPlayer_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_motionVectors.CloneTo(clone);
+				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalPlayer_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_motionVectors)] = clone;
+			}
+			else
+			{
+				logger.Error("Couldn't find binding (UnityEngine.MeshRenderer).motionVectors");
+			}
+			if (coherenceSync.TryGetBindingByGuid("5b89f760-3709-4a6a-90dd-f66de3dace04", "useLightProbes", out Binding InternalPlayer_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_useLightProbes))
+			{
+				var clone = new Binding_7704fb97ad8c64b28a3b6f9053338e64_5b89f760_3709_4a6a_90dd_f66de3dace04();
+				InternalPlayer_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_useLightProbes.CloneTo(clone);
+				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalPlayer_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_useLightProbes)] = clone;
+			}
+			else
+			{
+				logger.Error("Couldn't find binding (UnityEngine.MeshRenderer).useLightProbes");
 			}
 			if (coherenceSync.TryGetBindingByGuid("cffa1cb1-481e-4ef9-9f7a-645e2b35e077", "position", out Binding InternalPlayer_id0_UnityEngine__char_46_Transform_6549551179320053454_Player_id0_UnityEngine__char_46_Transform_6549551179320053454_position))
 			{
