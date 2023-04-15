@@ -1747,7 +1747,6 @@ MonoBehaviour:
   usingReflection: 0
   coherenceTag: 
   componentActions:
-  - rid: 7577078024608677998
   - rid: 7577078024608677999
   - rid: 7577078024608678032
   - rid: 7577078029135642652
@@ -1804,10 +1803,6 @@ MonoBehaviour:
             Coherence.Toolkit, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
         oldName: 
         oldParameterAssemblyTypes: []
-    - rid: 7577078024608677998
-      type: {class: DisableBehaviourComponentAction, ns: Coherence.Toolkit.ComponentActions, asm: Coherence.Toolkit}
-      data:
-        component: {fileID: 3364310959788457435}
     - rid: 7577078024608677999
       type: {class: DisableBehaviourComponentAction, ns: Coherence.Toolkit.ComponentActions, asm: Coherence.Toolkit}
       data:
