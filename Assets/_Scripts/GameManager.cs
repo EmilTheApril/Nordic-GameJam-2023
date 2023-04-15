@@ -91,7 +91,10 @@ public class GameManager : MonoBehaviour
 
             foreach (GameObject player in players)
             {
-                player.GetComponent<PlayerMovement>().SendDisableAttackCommand();
+                if (player.GetComponent<PlayerMovement>() != null)
+                {
+                    player.GetComponent<PlayerMovement>().SendDisableAttackCommand();
+                }
             }
 
             players[rnd].GetComponent<PlayerTimer>().SetGameManagerTime();
