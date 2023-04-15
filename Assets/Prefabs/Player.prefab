@@ -2218,7 +2218,7 @@ MonoBehaviour:
       data:
         descriptor:
           rid: 7577078031012331620
-        routing: 1
+        routing: 0
         isPredicted: 0
         defaultInterpolationPath: 
         guid: 43953eec-cfe5-4f0b-a2d0-c0428330d706
