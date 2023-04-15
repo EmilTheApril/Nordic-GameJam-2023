@@ -16,7 +16,7 @@ namespace Coherence.Generated
 
 	public class Definition : IDefinition
 	{
-		public const string schemaId = "19442652a3fd8a4b91d4423a7a408090dbad11d7";
+		public const string schemaId = "e4864ef4c1cf8a494fee9ce195f1eafac696856a";
 		public const uint InternalWorldPosition = 0;
 		public const uint InternalWorldOrientation = 1;
 		public const uint InternalLocalUser = 2;
@@ -119,20 +119,16 @@ namespace Coherence.Generated
 		public const uint InternalGenericFieldULong3 = 99;
 		public const uint InternalGenericFieldColor0 = 100;
 		public const uint InternalGenericFieldColor1 = 101;
-		public const uint InternalArchetypeGameManager_25066ca7913364f2f9c66eac585b7269_WorldPosition_LOD0 = 102;
-		public const uint InternalArchetypePlayer_7704fb97ad8c64b28a3b6f9053338e64_WorldPosition_LOD0 = 103;
-		public const uint InternalArchetypePlayer_7704fb97ad8c64b28a3b6f9053338e64_WorldOrientation_LOD0 = 104;
+		public const uint InternalArchetypePlayer_7704fb97ad8c64b28a3b6f9053338e64_WorldPosition_LOD0 = 102;
+		public const uint InternalArchetypePlayer_7704fb97ad8c64b28a3b6f9053338e64_WorldOrientation_LOD0 = 103;
 		public const uint InternalAuthorityRequest = 0;
 		public const uint InternalAuthorityTransfer = 1;
 		public const uint InternalQuerySynced = 2;
 		public const uint InternalAdoptOrphan = 3;
 		public const uint InternalPersistenceReady = 4;
 		public const uint InternalGenericCommand = 5;
-		public const uint InternalGameManager_id1_GameManager__char_46_GameEnd_730e0f9a_0e03_49c4_b149_ad680d0cbfac = 6;
-		public const uint InternalGameManager_id1_GameManager__char_46_SetTime_90d2cd17_de07_4dc3_a195_c28e55d09bed = 7;
-		public const uint InternalGameManager_id1_GameManager__char_46_StartGame_5ffbb695_01f1_4793_be8f_3f05337bc655 = 8;
-		public const uint InternalPlayer_id0_PlayerTimer__char_46_SetGameManagerTime_9afdbe10_9e09_4007_8d36_d24e6e5bffab = 9;
-		public const uint InternalPlayer_id0_PlayerTimer__char_46_SetTime_a658414d_2522_48ae_af9d_4ab558a1a4b0 = 10;
+		public const uint InternalPlayer_id0_PlayerTimer__char_46_SetGameManagerTime_9afdbe10_9e09_4007_8d36_d24e6e5bffab = 6;
+		public const uint InternalPlayer_id0_PlayerTimer__char_46_SetTime_a658414d_2522_48ae_af9d_4ab558a1a4b0 = 7;
 
 		private static readonly Dictionary<uint, string> componentNamesForTypeIds = new Dictionary<uint, string>() {
 			{ 0, "WorldPosition" },
@@ -237,9 +233,8 @@ namespace Coherence.Generated
 			{ 99, "GenericFieldULong3" },
 			{ 100, "GenericFieldColor0" },
 			{ 101, "GenericFieldColor1" },
-			{ 102, "ArchetypeGameManager_25066ca7913364f2f9c66eac585b7269_WorldPosition_LOD0" },
-			{ 103, "ArchetypePlayer_7704fb97ad8c64b28a3b6f9053338e64_WorldPosition_LOD0" },
-			{ 104, "ArchetypePlayer_7704fb97ad8c64b28a3b6f9053338e64_WorldOrientation_LOD0" },
+			{ 102, "ArchetypePlayer_7704fb97ad8c64b28a3b6f9053338e64_WorldPosition_LOD0" },
+			{ 103, "ArchetypePlayer_7704fb97ad8c64b28a3b6f9053338e64_WorldOrientation_LOD0" },
 		};
 
 		public static string ComponentNameForTypeId(uint typeId)
@@ -465,8 +460,6 @@ namespace Coherence.Generated
 					return GenericFieldColor0.Deserialize(inProtocolStream);
 				case InternalGenericFieldColor1:
 					return GenericFieldColor1.Deserialize(inProtocolStream);
-				case InternalArchetypeGameManager_25066ca7913364f2f9c66eac585b7269_WorldPosition_LOD0:
-					return WorldPosition.DeserializeArchetypeGameManager_25066ca7913364f2f9c66eac585b7269_WorldPosition_LOD0(inProtocolStream);
 				case InternalArchetypePlayer_7704fb97ad8c64b28a3b6f9053338e64_WorldPosition_LOD0:
 					return WorldPosition.DeserializeArchetypePlayer_7704fb97ad8c64b28a3b6f9053338e64_WorldPosition_LOD0(inProtocolStream);
 				case InternalArchetypePlayer_7704fb97ad8c64b28a3b6f9053338e64_WorldOrientation_LOD0:
@@ -806,12 +799,6 @@ namespace Coherence.Generated
 					return PersistenceReady.Deserialize(bitStream);
 				case Definition.InternalGenericCommand:
 					return GenericCommand.Deserialize(bitStream);
-				case Definition.InternalGameManager_id1_GameManager__char_46_GameEnd_730e0f9a_0e03_49c4_b149_ad680d0cbfac:
-					return GameManager_id1_GameManager__char_46_GameEnd_730e0f9a_0e03_49c4_b149_ad680d0cbfac.Deserialize(bitStream);
-				case Definition.InternalGameManager_id1_GameManager__char_46_SetTime_90d2cd17_de07_4dc3_a195_c28e55d09bed:
-					return GameManager_id1_GameManager__char_46_SetTime_90d2cd17_de07_4dc3_a195_c28e55d09bed.Deserialize(bitStream);
-				case Definition.InternalGameManager_id1_GameManager__char_46_StartGame_5ffbb695_01f1_4793_be8f_3f05337bc655:
-					return GameManager_id1_GameManager__char_46_StartGame_5ffbb695_01f1_4793_be8f_3f05337bc655.Deserialize(bitStream);
 				case Definition.InternalPlayer_id0_PlayerTimer__char_46_SetGameManagerTime_9afdbe10_9e09_4007_8d36_d24e6e5bffab:
 					return Player_id0_PlayerTimer__char_46_SetGameManagerTime_9afdbe10_9e09_4007_8d36_d24e6e5bffab.Deserialize(bitStream);
 				case Definition.InternalPlayer_id0_PlayerTimer__char_46_SetTime_a658414d_2522_48ae_af9d_4ab558a1a4b0:
@@ -894,15 +881,6 @@ namespace Coherence.Generated
 					break;
 				case Definition.InternalGenericCommand:
 					GenericCommand.Serialize((GenericCommand)data, bitStream);
-					break;
-				case Definition.InternalGameManager_id1_GameManager__char_46_GameEnd_730e0f9a_0e03_49c4_b149_ad680d0cbfac:
-					GameManager_id1_GameManager__char_46_GameEnd_730e0f9a_0e03_49c4_b149_ad680d0cbfac.Serialize((GameManager_id1_GameManager__char_46_GameEnd_730e0f9a_0e03_49c4_b149_ad680d0cbfac)data, bitStream);
-					break;
-				case Definition.InternalGameManager_id1_GameManager__char_46_SetTime_90d2cd17_de07_4dc3_a195_c28e55d09bed:
-					GameManager_id1_GameManager__char_46_SetTime_90d2cd17_de07_4dc3_a195_c28e55d09bed.Serialize((GameManager_id1_GameManager__char_46_SetTime_90d2cd17_de07_4dc3_a195_c28e55d09bed)data, bitStream);
-					break;
-				case Definition.InternalGameManager_id1_GameManager__char_46_StartGame_5ffbb695_01f1_4793_be8f_3f05337bc655:
-					GameManager_id1_GameManager__char_46_StartGame_5ffbb695_01f1_4793_be8f_3f05337bc655.Serialize((GameManager_id1_GameManager__char_46_StartGame_5ffbb695_01f1_4793_be8f_3f05337bc655)data, bitStream);
 					break;
 				case Definition.InternalPlayer_id0_PlayerTimer__char_46_SetGameManagerTime_9afdbe10_9e09_4007_8d36_d24e6e5bffab:
 					Player_id0_PlayerTimer__char_46_SetGameManagerTime_9afdbe10_9e09_4007_8d36_d24e6e5bffab.Serialize((Player_id0_PlayerTimer__char_46_SetGameManagerTime_9afdbe10_9e09_4007_8d36_d24e6e5bffab)data, bitStream);

@@ -11,7 +11,11 @@ public class PlayerMovement : MonoBehaviour
     private bool jumping;
     private bool isGrounded;
 
+    [SerializeField] private GameObject attackObject;
+
     private Vector3 dir;
+
+    [SerializeField] private bool isMonster;
 
     [SerializeField] private Camera camera;
 
@@ -25,6 +29,7 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         MouseMovement();
+        TagPerson();
     }
 
     private void FixedUpdate()
@@ -38,8 +43,38 @@ public class PlayerMovement : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
         }
 
+        Leap();
+
         Move();
         Jump();
+    }
+
+    public void Leap()
+    {
+        if (!isMonster) return;
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            rb.AddForce(transform.forward * 1000, ForceMode.Impulse);
+        }
+    }
+
+    public void TagPerson()
+    {
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            attackObject.SetActive(true);
+            Invoke("DisableAttackObject", 0.1f);
+        }
+    }
+
+    public void DisableAttackObject()
+    {
+        attackObject.SetActive(false);
+    }
+
+    public void SetIsMonster()
+    {
+        isMonster = !isMonster;
     }
 
     private void OnMovement(InputValue inputValue)
@@ -75,5 +110,16 @@ public class PlayerMovement : MonoBehaviour
     private void OnCollisionEnter(Collision other)
     {
         isGrounded = true;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Attack"))
+        {
+            GameManager.instance.TagPlayer(gameObject);
+            other.gameObject.transform.parent.GetComponent<PlayerMovement>().SetIsMonster();
+            SetIsMonster();
+            Debug.Log("Is Tagged");
+        }
     }
 }

@@ -44,6 +44,7 @@ public class GameManager : MonoBehaviour
     public void TagPlayer(GameObject player)
     {
         player.GetComponent<PlayerTimer>().SetGameManagerTime();
+        player.GetComponent<PlayerMovement>().SetIsMonster();
     }
 
     public void GameEnd()
@@ -81,8 +82,14 @@ public class GameManager : MonoBehaviour
             return;
         }
 
-        gameStarted = true;
-        GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
-        players[Random.Range(0, players.Length)].GetComponent<PlayerTimer>().SetGameManagerTime();
+        if (!gameStarted)
+        {
+
+            gameStarted = true;
+            GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
+            int rnd = Random.Range(0, players.Length);
+            players[rnd].GetComponent<PlayerTimer>().SetGameManagerTime();
+            players[rnd].GetComponent<PlayerMovement>().SetIsMonster();
+        }
     }
 }
