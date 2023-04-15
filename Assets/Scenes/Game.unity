@@ -1121,10 +1121,6 @@ PrefabInstance:
       value: GameManager
       objectReference: {fileID: 0}
     - target: {fileID: 8143915094630907382, guid: 25066ca7913364f2f9c66eac585b7269, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8143915094630907382, guid: 25066ca7913364f2f9c66eac585b7269, type: 3}
       propertyPath: counterScript
       value: 
       objectReference: {fileID: 1769125586}
@@ -1172,13 +1168,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8659487833175811422, guid: 25066ca7913364f2f9c66eac585b7269, type: 3}
-      propertyPath: InitialBufferDelay
-      value: 3
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 0}
-    - {fileID: 2091765804398196532, guid: 25066ca7913364f2f9c66eac585b7269, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25066ca7913364f2f9c66eac585b7269, type: 3}
 --- !u!1001 &8336486183344139880
 PrefabInstance:
