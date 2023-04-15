@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Coherence.Toolkit;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -22,9 +23,13 @@ public class PlayerMovement : MonoBehaviour
 
     private Rigidbody rb;
 
+    private CoherenceSync sync;
+
     private void Start()
     {
+        sync = GetComponent<CoherenceSync>();
         DisableAttackObject();
+        SendDisableAttackCommand();
         rb = GetComponent<Rigidbody>();
         TagText = GameObject.FindGameObjectWithTag("TagText");
         if (TagText != null)
@@ -54,6 +59,11 @@ public class PlayerMovement : MonoBehaviour
 
         Move();
         Jump();
+    }
+
+    public void SendDisableAttackCommand()
+    {
+        sync.SendCommand<PlayerMovement>(nameof(DisableAttackObject), Coherence.MessageTarget.All);
     }
 
     public void Leap()
