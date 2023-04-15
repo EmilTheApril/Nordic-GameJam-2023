@@ -31,6 +31,8 @@ component Player_id0_UnityEngine__char_46_Transform_6549551179320053454
 
 command Player_id0_PlayerMovement__char_46_DisableAttackObject_43953eec_cfe5_4f0b_a2d0_c0428330d706 [routing "All"]
 
+command Player_id0_PlayerMovement__char_46_EnableAttackObject_cd031244_34fe_41c9_857c_d2909c1e32f8 [routing "All"]
+
 command Player_id0_PlayerMovement__char_46_SendDisableAttackCommand_3dd80c95_dc6c_4a6b_8ddf_f48affbea502 [routing "All"]
 
 command Player_id0_PlayerTimer__char_46_SetGameManagerTime_9afdbe10_9e09_4007_8d36_d24e6e5bffab [routing "AuthorityOnly"]

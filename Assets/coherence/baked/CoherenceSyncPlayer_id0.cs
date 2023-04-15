@@ -764,8 +764,8 @@ namespace Coherence.Generated
 
 		public override SerializeEntityID Value
 		{
-			get => (SerializeEntityID)coherenceSync.MonoBridge.UnityObjectToEntityId(CastedUnityComponent.probeAnchor);
-			set => CastedUnityComponent.probeAnchor = coherenceSync.MonoBridge.EntityIdToTransform(value);
+			get => (SerializeEntityID)coherenceSync.MonoBridge.UnityObjectToEntityId(CastedUnityComponent.lightProbeAnchor);
+			set => CastedUnityComponent.lightProbeAnchor = coherenceSync.MonoBridge.EntityIdToTransform(value);
 		}
 
 		protected override SerializeEntityID ReadComponentData(ICoherenceComponentData coherenceComponent)
@@ -1020,6 +1020,7 @@ namespace Coherence.Generated
 
 		// Cached targets for commands		
 		private PlayerMovement Player_id0_PlayerMovement__char_46_DisableAttackObject_43953eec_cfe5_4f0b_a2d0_c0428330d706_CommandTarget;		
+		private PlayerMovement Player_id0_PlayerMovement__char_46_EnableAttackObject_cd031244_34fe_41c9_857c_d2909c1e32f8_CommandTarget;		
 		private PlayerMovement Player_id0_PlayerMovement__char_46_SendDisableAttackCommand_3dd80c95_dc6c_4a6b_8ddf_f48affbea502_CommandTarget;		
 		private PlayerTimer Player_id0_PlayerTimer__char_46_SetGameManagerTime_9afdbe10_9e09_4007_8d36_d24e6e5bffab_CommandTarget;		
 		private PlayerTimer Player_id0_PlayerTimer__char_46_SetTime_a658414d_2522_48ae_af9d_4ab558a1a4b0_CommandTarget;
@@ -1042,6 +1043,16 @@ namespace Coherence.Generated
 			else
 			{
 				logger.Error("Couldn't find command binding (DisableAttackObject)");
+			}
+			if (coherenceSync.TryGetBindingByGuid("cd031244-34fe-41c9-857c-d2909c1e32f8", "EnableAttackObject", out Binding Player_id0_PlayerMovement__char_46_EnableAttackObject_cd031244_34fe_41c9_857c_d2909c1e32f8))
+			{
+				Player_id0_PlayerMovement__char_46_EnableAttackObject_cd031244_34fe_41c9_857c_d2909c1e32f8_CommandTarget = (PlayerMovement)Player_id0_PlayerMovement__char_46_EnableAttackObject_cd031244_34fe_41c9_857c_d2909c1e32f8.UnityComponent;
+				coherenceSync.AddCommandRequestDelegate("PlayerMovement.EnableAttackObject", "()",
+				SendCommand_Player_id0_PlayerMovement__char_46_EnableAttackObject_cd031244_34fe_41c9_857c_d2909c1e32f8, ReceiveLocalCommand_Player_id0_PlayerMovement__char_46_EnableAttackObject_cd031244_34fe_41c9_857c_d2909c1e32f8, MessageTarget.All, Player_id0_PlayerMovement__char_46_EnableAttackObject_cd031244_34fe_41c9_857c_d2909c1e32f8_CommandTarget,false);
+			}
+			else
+			{
+				logger.Error("Couldn't find command binding (EnableAttackObject)");
 			}
 			if (coherenceSync.TryGetBindingByGuid("3dd80c95-dc6c-4a6b-8ddf-f48affbea502", "SendDisableAttackCommand", out Binding Player_id0_PlayerMovement__char_46_SendDisableAttackCommand_3dd80c95_dc6c_4a6b_8ddf_f48affbea502))
 			{
@@ -1392,6 +1403,23 @@ namespace Coherence.Generated
 			var target = Player_id0_PlayerMovement__char_46_DisableAttackObject_43953eec_cfe5_4f0b_a2d0_c0428330d706_CommandTarget;
 			target.DisableAttackObject();
 		}
+		void SendCommand_Player_id0_PlayerMovement__char_46_EnableAttackObject_cd031244_34fe_41c9_857c_d2909c1e32f8(MessageTarget target, object[] args)
+		{
+			var command = new Player_id0_PlayerMovement__char_46_EnableAttackObject_cd031244_34fe_41c9_857c_d2909c1e32f8();
+			client.SendCommand(command, target, coherenceSync.EntityID);
+		}
+
+		void ReceiveLocalCommand_Player_id0_PlayerMovement__char_46_EnableAttackObject_cd031244_34fe_41c9_857c_d2909c1e32f8(MessageTarget target, object[] args)
+		{
+			var command = new Player_id0_PlayerMovement__char_46_EnableAttackObject_cd031244_34fe_41c9_857c_d2909c1e32f8();
+			ReceiveCommand_Player_id0_PlayerMovement__char_46_EnableAttackObject_cd031244_34fe_41c9_857c_d2909c1e32f8(command);
+		}
+
+		void ReceiveCommand_Player_id0_PlayerMovement__char_46_EnableAttackObject_cd031244_34fe_41c9_857c_d2909c1e32f8(Player_id0_PlayerMovement__char_46_EnableAttackObject_cd031244_34fe_41c9_857c_d2909c1e32f8 command)
+		{
+			var target = Player_id0_PlayerMovement__char_46_EnableAttackObject_cd031244_34fe_41c9_857c_d2909c1e32f8_CommandTarget;
+			target.EnableAttackObject();
+		}
 		void SendCommand_Player_id0_PlayerMovement__char_46_SendDisableAttackCommand_3dd80c95_dc6c_4a6b_8ddf_f48affbea502(MessageTarget target, object[] args)
 		{
 			var command = new Player_id0_PlayerMovement__char_46_SendDisableAttackCommand_3dd80c95_dc6c_4a6b_8ddf_f48affbea502();
@@ -1454,6 +1482,9 @@ namespace Coherence.Generated
 			{
 				case Player_id0_PlayerMovement__char_46_DisableAttackObject_43953eec_cfe5_4f0b_a2d0_c0428330d706 castedCommand:
 					ReceiveCommand_Player_id0_PlayerMovement__char_46_DisableAttackObject_43953eec_cfe5_4f0b_a2d0_c0428330d706(castedCommand);
+					break;
+				case Player_id0_PlayerMovement__char_46_EnableAttackObject_cd031244_34fe_41c9_857c_d2909c1e32f8 castedCommand:
+					ReceiveCommand_Player_id0_PlayerMovement__char_46_EnableAttackObject_cd031244_34fe_41c9_857c_d2909c1e32f8(castedCommand);
 					break;
 				case Player_id0_PlayerMovement__char_46_SendDisableAttackCommand_3dd80c95_dc6c_4a6b_8ddf_f48affbea502 castedCommand:
 					ReceiveCommand_Player_id0_PlayerMovement__char_46_SendDisableAttackCommand_3dd80c95_dc6c_4a6b_8ddf_f48affbea502(castedCommand);

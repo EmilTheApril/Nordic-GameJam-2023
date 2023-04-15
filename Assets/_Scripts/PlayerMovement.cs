@@ -28,7 +28,6 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
         sync = GetComponent<CoherenceSync>();
-        DisableAttackObject();
         SendDisableAttackCommand();
         rb = GetComponent<Rigidbody>();
         TagText = GameObject.FindGameObjectWithTag("TagText");
@@ -66,6 +65,11 @@ public class PlayerMovement : MonoBehaviour
         sync.SendCommand<PlayerMovement>(nameof(DisableAttackObject), Coherence.MessageTarget.All);
     }
 
+    public void SendEnableAttackCommand()
+    {
+        sync.SendCommand<PlayerMovement>(nameof(EnableAttackObject), Coherence.MessageTarget.All);
+    }
+
     public void Leap()
     {
         if (!isMonster) return;
@@ -79,8 +83,8 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Mouse0) && isMonster)
         {
-            attackObject.SetActive(true);
-            Invoke("DisableAttackObject", 0.1f);
+            SendEnableAttackCommand();
+            Invoke("SendDisableAttackCommand", 0.1f);
         }
     }
 
@@ -95,6 +99,11 @@ public class PlayerMovement : MonoBehaviour
     public void DisableAttackObject()
     {
         attackObject.SetActive(false);
+    }
+
+    public void EnableAttackObject()
+    {
+        attackObject.SetActive(true);
     }
 
     public void SetIsMonster()
