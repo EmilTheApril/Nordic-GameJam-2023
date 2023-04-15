@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Asset Packs/Fantasy Skybox FREE/Cubemaps/FS002.meta
 guid: 84e67ed20e6185846b3371dbdcab2863
+========
+guid: bc776afcee2bfdc458ca2ca6027ba1f7
+>>>>>>>> 59db9f95152ad3d4ebdf7d6934250886f1cc8936:Assets/Asset Packs/Fantasy Skybox FREE.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
