@@ -159,7 +159,7 @@ public class PlayerMovement : MonoBehaviour
         if (other.CompareTag("Attack"))
         {
             GameManager.instance.TagPlayer(gameObject);
-            other.gameObject.GetComponent<PlayerMovement>().SetIsMonster();
+            other.transform.parent.gameObject.GetComponent<PlayerMovement>().SetIsMonster();
             SetIsMonster();
         }
     }
