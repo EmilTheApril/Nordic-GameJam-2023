@@ -84,6 +84,228 @@ namespace Coherence.Generated
 		}
 	}
 
+	public class Binding_7704fb97ad8c64b28a3b6f9053338e64_d32ffa6c_7b73_4411_b4f8_862c93f2f239 : BoolBinding
+	{
+		private UnityEngine.BoxCollider CastedUnityComponent;		
+
+		protected override void OnBindingCloned()
+		{
+			CastedUnityComponent = (UnityEngine.BoxCollider)UnityComponent;
+		}
+		public override string CoherenceComponentName => "Player_id0_UnityEngine__char_46_BoxCollider_5711664212391567816";
+
+		public override uint FieldMask => 0b00000000000000000000000000000001;
+
+		public override bool Value
+		{
+			get => (bool)(System.Boolean)(CastedUnityComponent.isTrigger);
+			set => CastedUnityComponent.isTrigger = (System.Boolean)(value);
+		}
+
+		protected override bool ReadComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Player_id0_UnityEngine__char_46_BoxCollider_5711664212391567816)coherenceComponent;
+			return update.isTrigger;
+		}
+		
+		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Player_id0_UnityEngine__char_46_BoxCollider_5711664212391567816)coherenceComponent;
+			update.isTrigger = Value;
+			return update;
+		}
+
+		public override ICoherenceComponentData CreateComponentData()
+		{
+			return new Player_id0_UnityEngine__char_46_BoxCollider_5711664212391567816();
+		}
+	}
+
+	public class Binding_7704fb97ad8c64b28a3b6f9053338e64_79858427_6202_4bcf_aa43_0462a18a2b76 : BoolBinding
+	{
+		private UnityEngine.BoxCollider CastedUnityComponent;		
+
+		protected override void OnBindingCloned()
+		{
+			CastedUnityComponent = (UnityEngine.BoxCollider)UnityComponent;
+		}
+		public override string CoherenceComponentName => "Player_id0_UnityEngine__char_46_BoxCollider_5711664212391567816";
+
+		public override uint FieldMask => 0b00000000000000000000000000000010;
+
+		public override bool Value
+		{
+			get => (bool)(System.Boolean)(CastedUnityComponent.enabled);
+			set => CastedUnityComponent.enabled = (System.Boolean)(value);
+		}
+
+		protected override bool ReadComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Player_id0_UnityEngine__char_46_BoxCollider_5711664212391567816)coherenceComponent;
+			return update.enabled;
+		}
+		
+		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Player_id0_UnityEngine__char_46_BoxCollider_5711664212391567816)coherenceComponent;
+			update.enabled = Value;
+			return update;
+		}
+
+		public override ICoherenceComponentData CreateComponentData()
+		{
+			return new Player_id0_UnityEngine__char_46_BoxCollider_5711664212391567816();
+		}
+	}
+
+	public class Binding_7704fb97ad8c64b28a3b6f9053338e64_46ca73ea_3207_4eff_9f26_e0b06b63bf1e : BoolBinding
+	{
+		private UnityEngine.MeshRenderer CastedUnityComponent;		
+
+		protected override void OnBindingCloned()
+		{
+			CastedUnityComponent = (UnityEngine.MeshRenderer)UnityComponent;
+		}
+		public override string CoherenceComponentName => "Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903";
+
+		public override uint FieldMask => 0b00000000000000000000000000000001;
+
+		public override bool Value
+		{
+			get => (bool)(System.Boolean)(CastedUnityComponent.enabled);
+			set => CastedUnityComponent.enabled = (System.Boolean)(value);
+		}
+
+		protected override bool ReadComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903)coherenceComponent;
+			return update.enabled;
+		}
+		
+		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903)coherenceComponent;
+			update.enabled = Value;
+			return update;
+		}
+
+		public override ICoherenceComponentData CreateComponentData()
+		{
+			return new Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903();
+		}
+	}
+
+	public class Binding_7704fb97ad8c64b28a3b6f9053338e64_cffa1cb1_481e_4ef9_9f7a_645e2b35e077 : DeepPositionBinding
+	{
+		private UnityEngine.Transform CastedUnityComponent;		
+
+		protected override void OnBindingCloned()
+		{
+			CastedUnityComponent = (UnityEngine.Transform)UnityComponent;
+		}
+		public override string CoherenceComponentName => "Player_id0_UnityEngine__char_46_Transform_6549551179320053454";
+
+		public override uint FieldMask => 0b00000000000000000000000000000001;
+
+		public override Vector3 Value
+		{
+			get => (Vector3)(UnityEngine.Vector3)(CastedUnityComponent.localPosition);
+			set => CastedUnityComponent.localPosition = (UnityEngine.Vector3)(value);
+		}
+
+		protected override Vector3 ReadComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Player_id0_UnityEngine__char_46_Transform_6549551179320053454)coherenceComponent;
+			return update.position;
+		}
+		
+		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Player_id0_UnityEngine__char_46_Transform_6549551179320053454)coherenceComponent;
+			update.position = Value;
+			return update;
+		}
+
+		public override ICoherenceComponentData CreateComponentData()
+		{
+			return new Player_id0_UnityEngine__char_46_Transform_6549551179320053454();
+		}
+	}
+
+	public class Binding_7704fb97ad8c64b28a3b6f9053338e64_45e17fea_bd00_40a3_95f8_2e79337e6965 : DeepRotationBinding
+	{
+		private UnityEngine.Transform CastedUnityComponent;		
+
+		protected override void OnBindingCloned()
+		{
+			CastedUnityComponent = (UnityEngine.Transform)UnityComponent;
+		}
+		public override string CoherenceComponentName => "Player_id0_UnityEngine__char_46_Transform_6549551179320053454";
+
+		public override uint FieldMask => 0b00000000000000000000000000000010;
+
+		public override Quaternion Value
+		{
+			get => (Quaternion)(UnityEngine.Quaternion)(CastedUnityComponent.localRotation);
+			set => CastedUnityComponent.localRotation = (UnityEngine.Quaternion)(value);
+		}
+
+		protected override Quaternion ReadComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Player_id0_UnityEngine__char_46_Transform_6549551179320053454)coherenceComponent;
+			return update.rotation;
+		}
+		
+		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Player_id0_UnityEngine__char_46_Transform_6549551179320053454)coherenceComponent;
+			update.rotation = Value;
+			return update;
+		}
+
+		public override ICoherenceComponentData CreateComponentData()
+		{
+			return new Player_id0_UnityEngine__char_46_Transform_6549551179320053454();
+		}
+	}
+
+	public class Binding_7704fb97ad8c64b28a3b6f9053338e64_538e6114_0057_472c_baed_45bc97daa617 : DeepScaleBinding
+	{
+		private UnityEngine.Transform CastedUnityComponent;		
+
+		protected override void OnBindingCloned()
+		{
+			CastedUnityComponent = (UnityEngine.Transform)UnityComponent;
+		}
+		public override string CoherenceComponentName => "Player_id0_UnityEngine__char_46_Transform_6549551179320053454";
+
+		public override uint FieldMask => 0b00000000000000000000000000000100;
+
+		public override Vector3 Value
+		{
+			get => (Vector3)(UnityEngine.Vector3)(CastedUnityComponent.localScale);
+			set => CastedUnityComponent.localScale = (UnityEngine.Vector3)(value);
+		}
+
+		protected override Vector3 ReadComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Player_id0_UnityEngine__char_46_Transform_6549551179320053454)coherenceComponent;
+			return update.localScale;
+		}
+		
+		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (Player_id0_UnityEngine__char_46_Transform_6549551179320053454)coherenceComponent;
+			update.localScale = Value;
+			return update;
+		}
+
+		public override ICoherenceComponentData CreateComponentData()
+		{
+			return new Player_id0_UnityEngine__char_46_Transform_6549551179320053454();
+		}
+	}
+
 
 	[Preserve]
 	[AddComponentMenu("coherence/Baked/Baked 'Player' (auto assigned)")]
@@ -145,6 +367,66 @@ namespace Coherence.Generated
 			else
 			{
 				logger.Error("Couldn't find binding (UnityEngine.Transform).rotation");
+			}
+			if (coherenceSync.TryGetBindingByGuid("d32ffa6c-7b73-4411-b4f8-862c93f2f239", "isTrigger", out Binding InternalPlayer_id0_UnityEngine__char_46_BoxCollider_5711664212391567816_Player_id0_UnityEngine__char_46_BoxCollider_5711664212391567816_isTrigger))
+			{
+				var clone = new Binding_7704fb97ad8c64b28a3b6f9053338e64_d32ffa6c_7b73_4411_b4f8_862c93f2f239();
+				InternalPlayer_id0_UnityEngine__char_46_BoxCollider_5711664212391567816_Player_id0_UnityEngine__char_46_BoxCollider_5711664212391567816_isTrigger.CloneTo(clone);
+				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalPlayer_id0_UnityEngine__char_46_BoxCollider_5711664212391567816_Player_id0_UnityEngine__char_46_BoxCollider_5711664212391567816_isTrigger)] = clone;
+			}
+			else
+			{
+				logger.Error("Couldn't find binding (UnityEngine.BoxCollider).isTrigger");
+			}
+			if (coherenceSync.TryGetBindingByGuid("79858427-6202-4bcf-aa43-0462a18a2b76", "enabled", out Binding InternalPlayer_id0_UnityEngine__char_46_BoxCollider_5711664212391567816_Player_id0_UnityEngine__char_46_BoxCollider_5711664212391567816_enabled))
+			{
+				var clone = new Binding_7704fb97ad8c64b28a3b6f9053338e64_79858427_6202_4bcf_aa43_0462a18a2b76();
+				InternalPlayer_id0_UnityEngine__char_46_BoxCollider_5711664212391567816_Player_id0_UnityEngine__char_46_BoxCollider_5711664212391567816_enabled.CloneTo(clone);
+				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalPlayer_id0_UnityEngine__char_46_BoxCollider_5711664212391567816_Player_id0_UnityEngine__char_46_BoxCollider_5711664212391567816_enabled)] = clone;
+			}
+			else
+			{
+				logger.Error("Couldn't find binding (UnityEngine.BoxCollider).enabled");
+			}
+			if (coherenceSync.TryGetBindingByGuid("46ca73ea-3207-4eff-9f26-e0b06b63bf1e", "enabled", out Binding InternalPlayer_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_enabled))
+			{
+				var clone = new Binding_7704fb97ad8c64b28a3b6f9053338e64_46ca73ea_3207_4eff_9f26_e0b06b63bf1e();
+				InternalPlayer_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_enabled.CloneTo(clone);
+				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalPlayer_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903_enabled)] = clone;
+			}
+			else
+			{
+				logger.Error("Couldn't find binding (UnityEngine.MeshRenderer).enabled");
+			}
+			if (coherenceSync.TryGetBindingByGuid("cffa1cb1-481e-4ef9-9f7a-645e2b35e077", "position", out Binding InternalPlayer_id0_UnityEngine__char_46_Transform_6549551179320053454_Player_id0_UnityEngine__char_46_Transform_6549551179320053454_position))
+			{
+				var clone = new Binding_7704fb97ad8c64b28a3b6f9053338e64_cffa1cb1_481e_4ef9_9f7a_645e2b35e077();
+				InternalPlayer_id0_UnityEngine__char_46_Transform_6549551179320053454_Player_id0_UnityEngine__char_46_Transform_6549551179320053454_position.CloneTo(clone);
+				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalPlayer_id0_UnityEngine__char_46_Transform_6549551179320053454_Player_id0_UnityEngine__char_46_Transform_6549551179320053454_position)] = clone;
+			}
+			else
+			{
+				logger.Error("Couldn't find binding (UnityEngine.Transform).position");
+			}
+			if (coherenceSync.TryGetBindingByGuid("45e17fea-bd00-40a3-95f8-2e79337e6965", "rotation", out Binding InternalPlayer_id0_UnityEngine__char_46_Transform_6549551179320053454_Player_id0_UnityEngine__char_46_Transform_6549551179320053454_rotation))
+			{
+				var clone = new Binding_7704fb97ad8c64b28a3b6f9053338e64_45e17fea_bd00_40a3_95f8_2e79337e6965();
+				InternalPlayer_id0_UnityEngine__char_46_Transform_6549551179320053454_Player_id0_UnityEngine__char_46_Transform_6549551179320053454_rotation.CloneTo(clone);
+				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalPlayer_id0_UnityEngine__char_46_Transform_6549551179320053454_Player_id0_UnityEngine__char_46_Transform_6549551179320053454_rotation)] = clone;
+			}
+			else
+			{
+				logger.Error("Couldn't find binding (UnityEngine.Transform).rotation");
+			}
+			if (coherenceSync.TryGetBindingByGuid("538e6114-0057-472c-baed-45bc97daa617", "localScale", out Binding InternalPlayer_id0_UnityEngine__char_46_Transform_6549551179320053454_Player_id0_UnityEngine__char_46_Transform_6549551179320053454_localScale))
+			{
+				var clone = new Binding_7704fb97ad8c64b28a3b6f9053338e64_538e6114_0057_472c_baed_45bc97daa617();
+				InternalPlayer_id0_UnityEngine__char_46_Transform_6549551179320053454_Player_id0_UnityEngine__char_46_Transform_6549551179320053454_localScale.CloneTo(clone);
+				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalPlayer_id0_UnityEngine__char_46_Transform_6549551179320053454_Player_id0_UnityEngine__char_46_Transform_6549551179320053454_localScale)] = clone;
+			}
+			else
+			{
+				logger.Error("Couldn't find binding (UnityEngine.Transform).localScale");
 			}
 		}
 

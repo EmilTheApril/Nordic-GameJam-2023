@@ -18,7 +18,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6549551179320053454
 Transform:
   m_ObjectHideFlags: 0
@@ -1686,10 +1686,12 @@ MonoBehaviour:
   - rid: 7577078029135642657
   - rid: 7577078029135642664
   - rid: 7577078029135642666
-  - rid: 7577078031012331574
-  - rid: 7577078031012331576
-  - rid: 7577078031012331578
-  - rid: 7577078031012331592
+  - rid: 7577078031012331600
+  - rid: 7577078031012331602
+  - rid: 7577078031012331604
+  - rid: 7577078031012331606
+  - rid: 7577078031012331608
+  - rid: 7577078031012331610
   onNetworkedInstantiation:
     m_PersistentCalls:
       m_Calls: []
@@ -1915,27 +1917,33 @@ MonoBehaviour:
             Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
         oldName: 
         oldParameterAssemblyTypes: []
-    - rid: 7577078031012331574
+    - rid: 7577078031012331600
       type: {class: DeepPositionBinding, ns: Coherence.Toolkit.Bindings.TransformBindings, asm: Coherence.Toolkit}
       data:
         descriptor:
-          rid: 7577078031012331575
+          rid: 7577078031012331601
         routing: 0
         isPredicted: 0
         defaultInterpolationPath: 
-        guid: 96b9cd77-b2d6-47be-ba17-f616075305ab
+        guid: cffa1cb1-481e-4ef9-9f7a-645e2b35e077
         archetypeData:
-          type: 0
+          type: 7
           minRange: 0
           maxRange: 0
           sampleRate: 0
           floatCompression: 0
-          fields: []
+          fields:
+          - type: 7
+            bits: 32
+            minRange: 0
+            maxRange: 0
+            precision: 0.001
+            floatCompression: 0
           sharedBinding: {fileID: 0}
         unityComponent: {fileID: 6549551179320053454}
         coherenceSync: {fileID: 0}
         interpolationSettings: {fileID: 11400000, guid: ae4419d1d9a8643709bf5f6b90c584a5, type: 2}
-    - rid: 7577078031012331575
+    - rid: 7577078031012331601
       type: {class: Descriptor, ns: Coherence.Toolkit.Bindings, asm: Coherence.Toolkit}
       data:
         name: position
@@ -1955,67 +1963,33 @@ MonoBehaviour:
             Coherence.Toolkit, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
         oldName: 
         oldParameterAssemblyTypes: []
-    - rid: 7577078031012331576
-      type: {class: DeepScaleBinding, ns: Coherence.Toolkit.Bindings.TransformBindings, asm: Coherence.Toolkit}
-      data:
-        descriptor:
-          rid: 7577078031012331577
-        routing: 0
-        isPredicted: 0
-        defaultInterpolationPath: 
-        guid: 6155a13d-0c7d-48fc-b1ed-e860eae4bb07
-        archetypeData:
-          type: 0
-          minRange: 0
-          maxRange: 0
-          sampleRate: 0
-          floatCompression: 0
-          fields: []
-          sharedBinding: {fileID: 0}
-        unityComponent: {fileID: 6549551179320053454}
-        coherenceSync: {fileID: 0}
-        interpolationSettings: {fileID: 11400000, guid: ae4419d1d9a8643709bf5f6b90c584a5, type: 2}
-    - rid: 7577078031012331577
-      type: {class: Descriptor, ns: Coherence.Toolkit.Bindings, asm: Coherence.Toolkit}
-      data:
-        name: localScale
-        monoAssemblyType: UnityEngine.Vector3, UnityEngine
-        required: 0
-        enforcesLODingWhenFieldsOverriden: 1
-        valueSyncCallbackName: 
-        memberType: 64
-        parameterAssemblyTypes: []
-        ownerType:
-          assemblyQualifiedName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
-            Culture=neutral, PublicKeyToken=null
-        CustomData:
-          rid: -2
-        bindingType:
-          assemblyQualifiedName: Coherence.Toolkit.Bindings.TransformBindings.DeepScaleBinding,
-            Coherence.Toolkit, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-        oldName: 
-        oldParameterAssemblyTypes: []
-    - rid: 7577078031012331578
+    - rid: 7577078031012331602
       type: {class: DeepRotationBinding, ns: Coherence.Toolkit.Bindings.TransformBindings, asm: Coherence.Toolkit}
       data:
         descriptor:
-          rid: 7577078031012331579
+          rid: 7577078031012331603
         routing: 0
         isPredicted: 0
         defaultInterpolationPath: 
-        guid: 7e2a286e-28c9-46f3-8274-17d20727dfe9
+        guid: 45e17fea-bd00-40a3-95f8-2e79337e6965
         archetypeData:
-          type: 0
+          type: 8
           minRange: 0
           maxRange: 0
           sampleRate: 0
           floatCompression: 0
-          fields: []
+          fields:
+          - type: 8
+            bits: 32
+            minRange: 0
+            maxRange: 0
+            precision: 0.00000008381903171539307
+            floatCompression: 0
           sharedBinding: {fileID: 0}
         unityComponent: {fileID: 6549551179320053454}
         coherenceSync: {fileID: 0}
         interpolationSettings: {fileID: 11400000, guid: ae4419d1d9a8643709bf5f6b90c584a5, type: 2}
-    - rid: 7577078031012331579
+    - rid: 7577078031012331603
       type: {class: Descriptor, ns: Coherence.Toolkit.Bindings, asm: Coherence.Toolkit}
       data:
         name: rotation
@@ -2035,30 +2009,174 @@ MonoBehaviour:
             Coherence.Toolkit, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
         oldName: 
         oldParameterAssemblyTypes: []
-    - rid: 7577078031012331592
-      type: {class: BoolBinding, ns: Coherence.Toolkit.Bindings.ValueBindings, asm: Coherence.Toolkit}
+    - rid: 7577078031012331604
+      type: {class: DeepScaleBinding, ns: Coherence.Toolkit.Bindings.TransformBindings, asm: Coherence.Toolkit}
       data:
         descriptor:
-          rid: 7577078031012331593
+          rid: 7577078031012331605
         routing: 0
         isPredicted: 0
         defaultInterpolationPath: 
-        guid: ac08bde1-aefa-41ba-990a-d2160b714307
+        guid: 538e6114-0057-472c-baed-45bc97daa617
         archetypeData:
-          type: 0
+          type: 7
           minRange: 0
           maxRange: 0
-          sampleRate: 0
+          sampleRate: 20
           floatCompression: 0
-          fields: []
+          fields:
+          - type: 7
+            bits: 32
+            minRange: 0
+            maxRange: 0
+            precision: 0.001
+            floatCompression: 0
+          sharedBinding: {fileID: 0}
+        unityComponent: {fileID: 6549551179320053454}
+        coherenceSync: {fileID: 0}
+        interpolationSettings: {fileID: 11400000, guid: ae4419d1d9a8643709bf5f6b90c584a5, type: 2}
+    - rid: 7577078031012331605
+      type: {class: Descriptor, ns: Coherence.Toolkit.Bindings, asm: Coherence.Toolkit}
+      data:
+        name: localScale
+        monoAssemblyType: UnityEngine.Vector3, UnityEngine
+        required: 0
+        enforcesLODingWhenFieldsOverriden: 1
+        valueSyncCallbackName: 
+        memberType: 64
+        parameterAssemblyTypes: []
+        ownerType:
+          assemblyQualifiedName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+        CustomData:
+          rid: -2
+        bindingType:
+          assemblyQualifiedName: Coherence.Toolkit.Bindings.TransformBindings.DeepScaleBinding,
+            Coherence.Toolkit, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        oldName: 
+        oldParameterAssemblyTypes: []
+    - rid: 7577078031012331606
+      type: {class: BoolBinding, ns: Coherence.Toolkit.Bindings.ValueBindings, asm: Coherence.Toolkit}
+      data:
+        descriptor:
+          rid: 7577078031012331607
+        routing: 0
+        isPredicted: 0
+        defaultInterpolationPath: 
+        guid: 46ca73ea-3207-4eff-9f26-e0b06b63bf1e
+        archetypeData:
+          type: 3
+          minRange: 0
+          maxRange: 0
+          sampleRate: 20
+          floatCompression: 0
+          fields:
+          - type: 3
+            bits: 1
+            minRange: 0
+            maxRange: 0
+            precision: 0
+            floatCompression: 0
+          sharedBinding: {fileID: 0}
+        unityComponent: {fileID: 5546356872573735903}
+        coherenceSync: {fileID: 0}
+        interpolationSettings: {fileID: 11400000, guid: ae4419d1d9a8643709bf5f6b90c584a5, type: 2}
+    - rid: 7577078031012331607
+      type: {class: Descriptor, ns: Coherence.Toolkit.Bindings, asm: Coherence.Toolkit}
+      data:
+        name: enabled
+        monoAssemblyType: System.Boolean, mscorlib
+        required: 0
+        enforcesLODingWhenFieldsOverriden: 1
+        valueSyncCallbackName: 
+        memberType: 16
+        parameterAssemblyTypes: []
+        ownerType:
+          assemblyQualifiedName: UnityEngine.MeshRenderer, UnityEngine.CoreModule,
+            Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        CustomData:
+          rid: -2
+        bindingType:
+          assemblyQualifiedName: Coherence.Toolkit.Bindings.ValueBindings.BoolBinding,
+            Coherence.Toolkit, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        oldName: 
+        oldParameterAssemblyTypes: []
+    - rid: 7577078031012331608
+      type: {class: BoolBinding, ns: Coherence.Toolkit.Bindings.ValueBindings, asm: Coherence.Toolkit}
+      data:
+        descriptor:
+          rid: 7577078031012331609
+        routing: 0
+        isPredicted: 0
+        defaultInterpolationPath: 
+        guid: d32ffa6c-7b73-4411-b4f8-862c93f2f239
+        archetypeData:
+          type: 3
+          minRange: 0
+          maxRange: 0
+          sampleRate: 20
+          floatCompression: 0
+          fields:
+          - type: 3
+            bits: 1
+            minRange: 0
+            maxRange: 0
+            precision: 0
+            floatCompression: 0
           sharedBinding: {fileID: 0}
         unityComponent: {fileID: 5711664212391567816}
         coherenceSync: {fileID: 0}
         interpolationSettings: {fileID: 11400000, guid: ae4419d1d9a8643709bf5f6b90c584a5, type: 2}
-    - rid: 7577078031012331593
+    - rid: 7577078031012331609
       type: {class: Descriptor, ns: Coherence.Toolkit.Bindings, asm: Coherence.Toolkit}
       data:
         name: isTrigger
+        monoAssemblyType: System.Boolean, mscorlib
+        required: 0
+        enforcesLODingWhenFieldsOverriden: 1
+        valueSyncCallbackName: 
+        memberType: 16
+        parameterAssemblyTypes: []
+        ownerType:
+          assemblyQualifiedName: UnityEngine.BoxCollider, UnityEngine.PhysicsModule,
+            Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        CustomData:
+          rid: -2
+        bindingType:
+          assemblyQualifiedName: Coherence.Toolkit.Bindings.ValueBindings.BoolBinding,
+            Coherence.Toolkit, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        oldName: 
+        oldParameterAssemblyTypes: []
+    - rid: 7577078031012331610
+      type: {class: BoolBinding, ns: Coherence.Toolkit.Bindings.ValueBindings, asm: Coherence.Toolkit}
+      data:
+        descriptor:
+          rid: 7577078031012331611
+        routing: 0
+        isPredicted: 0
+        defaultInterpolationPath: 
+        guid: 79858427-6202-4bcf-aa43-0462a18a2b76
+        archetypeData:
+          type: 3
+          minRange: 0
+          maxRange: 0
+          sampleRate: 20
+          floatCompression: 0
+          fields:
+          - type: 3
+            bits: 1
+            minRange: 0
+            maxRange: 0
+            precision: 0
+            floatCompression: 0
+          sharedBinding: {fileID: 0}
+        unityComponent: {fileID: 5711664212391567816}
+        coherenceSync: {fileID: 0}
+        interpolationSettings: {fileID: 11400000, guid: ae4419d1d9a8643709bf5f6b90c584a5, type: 2}
+    - rid: 7577078031012331611
+      type: {class: Descriptor, ns: Coherence.Toolkit.Bindings, asm: Coherence.Toolkit}
+      data:
+        name: enabled
         monoAssemblyType: System.Boolean, mscorlib
         required: 0
         enforcesLODingWhenFieldsOverriden: 1

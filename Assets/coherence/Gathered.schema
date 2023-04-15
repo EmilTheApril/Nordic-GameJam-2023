@@ -1,0 +1,33 @@
+component Player_id0_UnityEngine__char_46_BoxCollider_5711664212391567816
+  isTrigger Bool [bits "1"]
+  enabled Bool [bits "1"]
+
+component Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903
+  enabled Bool [bits "1"]
+
+component Player_id0_UnityEngine__char_46_Transform_6549551179320053454
+  position Vector3 [compression "None"]
+  rotation Quaternion [bits "32"]
+  localScale Vector3 [compression "None"]
+
+command Player_id0_PlayerTimer__char_46_SetGameManagerTime_9afdbe10_9e09_4007_8d36_d24e6e5bffab [routing "AuthorityOnly"]
+
+command Player_id0_PlayerTimer__char_46_SetTime_a658414d_2522_48ae_af9d_4ab558a1a4b0 [routing "AuthorityOnly"]
+  time Float [compression "None"]
+
+archetype Player_7704fb97ad8c64b28a3b6f9053338e64
+  lod 0
+    WorldPosition 
+      value [compression "None"]
+    WorldOrientation 
+      value [bits "32"]
+    Player_id0_UnityEngine__char_46_Transform_6549551179320053454 
+      value [compression "None"]
+      value [bits "32"]
+      value [compression "None"]
+    Player_id0_UnityEngine__char_46_MeshRenderer_5546356872573735903 
+      number [bits "1"]
+    Player_id0_UnityEngine__char_46_BoxCollider_5711664212391567816 
+      number [bits "1"]
+      number [bits "1"]
+
