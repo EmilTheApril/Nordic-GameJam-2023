@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8143915094630907382}
   - component: {fileID: 2091765804398196532}
   - component: {fileID: 8659487833175811422}
+  - component: {fileID: 429724773554002137}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -110,8 +111,8 @@ MonoBehaviour:
   authorityTransferType: 2
   orphanedBehavior: 0
   lifetimeType: 0
-  uniquenessType: 0
-  coherenceUUID: d58af378-8f89-49dc-8cff-ff48d8148064
+  uniquenessType: 1
+  coherenceUUID: 523a3d4c-0eb9-45cc-9c2c-e9a10b80770d
   destructionBehavior: 0
   preserveChildren: 0
   reflectionBindings: []
@@ -132,8 +133,7 @@ MonoBehaviour:
   selectedSynchronizedPrefabOption: 2
   usingReflection: 0
   coherenceTag: 
-  componentActions:
-  - rid: 7577078029135642653
+  componentActions: []
   references:
     version: 2
     RefIds:
@@ -185,10 +185,6 @@ MonoBehaviour:
             Coherence.Toolkit, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
         oldName: 
         oldParameterAssemblyTypes: []
-    - rid: 7577078029135642653
-      type: {class: DisableBehaviourComponentAction, ns: Coherence.Toolkit.ComponentActions, asm: Coherence.Toolkit}
-      data:
-        component: {fileID: 8143915094630907382}
 --- !u!114 &8659487833175811422
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -208,3 +204,16 @@ MonoBehaviour:
   UseFixedSimulationFrames: 0
   inputName: GameManager
   fields: []
+--- !u!114 &429724773554002137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8143915094630907380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65d470e57c013458981031cae99a354f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoAssignOnSceneInstances: 0
