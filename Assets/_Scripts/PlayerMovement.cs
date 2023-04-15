@@ -11,7 +11,12 @@ public class PlayerMovement : MonoBehaviour
     private bool jumping;
     private bool isGrounded;
 
+    [SerializeField] private GameObject attackObject;
+    [SerializeField] private GameObject TagText;
+
     private Vector3 dir;
+
+    [SerializeField] private bool isMonster;
 
     [SerializeField] private Camera camera;
 
@@ -20,11 +25,14 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+        TagText = GameObject.FindGameObjectWithTag("TagText");
+        TagText.SetActive(false);
     }
 
     private void Update()
     {
         MouseMovement();
+        TagPerson();
     }
 
     private void FixedUpdate()
@@ -38,8 +46,48 @@ public class PlayerMovement : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
         }
 
+        Leap();
+
         Move();
         Jump();
+    }
+
+    public void Leap()
+    {
+        if (!isMonster) return;
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            rb.AddForce(camera.transform.forward * 50, ForceMode.Impulse);
+        }
+    }
+
+    public void TagPerson()
+    {
+        if (Input.GetKeyDown(KeyCode.Mouse0) && isMonster)
+        {
+            attackObject.SetActive(true);
+            Invoke("DisableAttackObject", 0.1f);
+        }
+    }
+
+    public void DisableTagText()
+    {
+        TagText.SetActive(false);
+    }
+
+    public void DisableAttackObject()
+    {
+        attackObject.SetActive(false);
+    }
+
+    public void SetIsMonster()
+    {
+        if (!isMonster)
+        {
+            TagText.SetActive(true);
+            Invoke("DisableTagText", 1.5f);
+        }
+        isMonster = !isMonster;
     }
 
     private void OnMovement(InputValue inputValue)
@@ -75,5 +123,15 @@ public class PlayerMovement : MonoBehaviour
     private void OnCollisionEnter(Collision other)
     {
         isGrounded = true;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Attack"))
+        {
+            GameManager.instance.TagPlayer(gameObject);
+            other.gameObject.GetComponent<PlayerMovement>().SetIsMonster();
+            SetIsMonster();
+        }
     }
 }
