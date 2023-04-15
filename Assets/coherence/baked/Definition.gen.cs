@@ -16,7 +16,7 @@ namespace Coherence.Generated
 
 	public class Definition : IDefinition
 	{
-		public const string schemaId = "ef23bf2112be39865006890fc61009e8c216387c";
+		public const string schemaId = "570be987f46648899107f5fc237fbb5c6d596716";
 		public const uint InternalWorldPosition = 0;
 		public const uint InternalWorldOrientation = 1;
 		public const uint InternalLocalUser = 2;
@@ -136,8 +136,9 @@ namespace Coherence.Generated
 		public const uint InternalPlayer_id0_PlayerMovement__char_46_DisableAttackObject_43953eec_cfe5_4f0b_a2d0_c0428330d706 = 6;
 		public const uint InternalPlayer_id0_PlayerMovement__char_46_EnableAttackObject_cd031244_34fe_41c9_857c_d2909c1e32f8 = 7;
 		public const uint InternalPlayer_id0_PlayerMovement__char_46_SendDisableAttackCommand_3dd80c95_dc6c_4a6b_8ddf_f48affbea502 = 8;
-		public const uint InternalPlayer_id0_PlayerTimer__char_46_SetGameManagerTime_9afdbe10_9e09_4007_8d36_d24e6e5bffab = 9;
-		public const uint InternalPlayer_id0_PlayerTimer__char_46_SetTime_a658414d_2522_48ae_af9d_4ab558a1a4b0 = 10;
+		public const uint InternalPlayer_id0_PlayerMovement__char_46_SetIsMonster_0e058992_7a34_4dc2_a5b1_584d1c8bb782 = 9;
+		public const uint InternalPlayer_id0_PlayerTimer__char_46_SetGameManagerTime_9afdbe10_9e09_4007_8d36_d24e6e5bffab = 10;
+		public const uint InternalPlayer_id0_PlayerTimer__char_46_SetTime_a658414d_2522_48ae_af9d_4ab558a1a4b0 = 11;
 
 		private static readonly Dictionary<uint, string> componentNamesForTypeIds = new Dictionary<uint, string>() {
 			{ 0, "WorldPosition" },
@@ -841,6 +842,8 @@ namespace Coherence.Generated
 					return Player_id0_PlayerMovement__char_46_EnableAttackObject_cd031244_34fe_41c9_857c_d2909c1e32f8.Deserialize(bitStream);
 				case Definition.InternalPlayer_id0_PlayerMovement__char_46_SendDisableAttackCommand_3dd80c95_dc6c_4a6b_8ddf_f48affbea502:
 					return Player_id0_PlayerMovement__char_46_SendDisableAttackCommand_3dd80c95_dc6c_4a6b_8ddf_f48affbea502.Deserialize(bitStream);
+				case Definition.InternalPlayer_id0_PlayerMovement__char_46_SetIsMonster_0e058992_7a34_4dc2_a5b1_584d1c8bb782:
+					return Player_id0_PlayerMovement__char_46_SetIsMonster_0e058992_7a34_4dc2_a5b1_584d1c8bb782.Deserialize(bitStream);
 				case Definition.InternalPlayer_id0_PlayerTimer__char_46_SetGameManagerTime_9afdbe10_9e09_4007_8d36_d24e6e5bffab:
 					return Player_id0_PlayerTimer__char_46_SetGameManagerTime_9afdbe10_9e09_4007_8d36_d24e6e5bffab.Deserialize(bitStream);
 				case Definition.InternalPlayer_id0_PlayerTimer__char_46_SetTime_a658414d_2522_48ae_af9d_4ab558a1a4b0:
@@ -932,6 +935,9 @@ namespace Coherence.Generated
 					break;
 				case Definition.InternalPlayer_id0_PlayerMovement__char_46_SendDisableAttackCommand_3dd80c95_dc6c_4a6b_8ddf_f48affbea502:
 					Player_id0_PlayerMovement__char_46_SendDisableAttackCommand_3dd80c95_dc6c_4a6b_8ddf_f48affbea502.Serialize((Player_id0_PlayerMovement__char_46_SendDisableAttackCommand_3dd80c95_dc6c_4a6b_8ddf_f48affbea502)data, bitStream);
+					break;
+				case Definition.InternalPlayer_id0_PlayerMovement__char_46_SetIsMonster_0e058992_7a34_4dc2_a5b1_584d1c8bb782:
+					Player_id0_PlayerMovement__char_46_SetIsMonster_0e058992_7a34_4dc2_a5b1_584d1c8bb782.Serialize((Player_id0_PlayerMovement__char_46_SetIsMonster_0e058992_7a34_4dc2_a5b1_584d1c8bb782)data, bitStream);
 					break;
 				case Definition.InternalPlayer_id0_PlayerTimer__char_46_SetGameManagerTime_9afdbe10_9e09_4007_8d36_d24e6e5bffab:
 					Player_id0_PlayerTimer__char_46_SetGameManagerTime_9afdbe10_9e09_4007_8d36_d24e6e5bffab.Serialize((Player_id0_PlayerTimer__char_46_SetGameManagerTime_9afdbe10_9e09_4007_8d36_d24e6e5bffab)data, bitStream);
