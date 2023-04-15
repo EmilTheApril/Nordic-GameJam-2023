@@ -26,7 +26,10 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         TagText = GameObject.FindGameObjectWithTag("TagText");
-        TagText.SetActive(false);
+        if (TagText != null)
+        {
+            TagText.SetActive(false);
+        }
     }
 
     private void Update()
@@ -72,7 +75,10 @@ public class PlayerMovement : MonoBehaviour
 
     public void DisableTagText()
     {
-        TagText.SetActive(false);
+        if (TagText != null)
+        {
+            TagText.SetActive(false);
+        }
     }
 
     public void DisableAttackObject()
@@ -84,7 +90,10 @@ public class PlayerMovement : MonoBehaviour
     {
         if (!isMonster)
         {
-            TagText.SetActive(true);
+            if (TagText != null)
+            {
+                TagText.SetActive(true);
+            }
             Invoke("DisableTagText", 1.5f);
         }
         isMonster = !isMonster;
