@@ -2358,9 +2358,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 8870375258392945596, guid: 1b0c597d7be2c4bd183adb1aa579dbf3, type: 3}
+  enemies: []
   enemySpawnAmount: 5
   enemyCount: 0
   timeInbetweenSpawns: 5
+  roomComplete: 0
+  roomStarted: 0
+  enemiesAlive: 0
   doors:
   - {fileID: 523184730}
   - {fileID: 63319824}
@@ -4214,9 +4218,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 8870375258392945596, guid: 1b0c597d7be2c4bd183adb1aa579dbf3, type: 3}
+  enemies: []
   enemySpawnAmount: 5
   enemyCount: 0
   timeInbetweenSpawns: 5
+  roomComplete: 0
+  roomStarted: 0
+  enemiesAlive: 0
   doors:
   - {fileID: 1861152291}
   - {fileID: 1372918529}
@@ -5278,9 +5286,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 8870375258392945596, guid: 1b0c597d7be2c4bd183adb1aa579dbf3, type: 3}
+  enemies: []
   enemySpawnAmount: 5
   enemyCount: 0
   timeInbetweenSpawns: 5
+  roomComplete: 0
+  roomStarted: 0
+  enemiesAlive: 0
   doors:
   - {fileID: 1382470211}
 --- !u!65 &762762422
@@ -7578,9 +7590,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 8870375258392945596, guid: 1b0c597d7be2c4bd183adb1aa579dbf3, type: 3}
+  enemies: []
   enemySpawnAmount: 5
   enemyCount: 0
   timeInbetweenSpawns: 5
+  roomComplete: 0
+  roomStarted: 0
+  enemiesAlive: 0
   doors:
   - {fileID: 1220906845}
   - {fileID: 1761850043}
@@ -8052,9 +8068,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 8870375258392945596, guid: 1b0c597d7be2c4bd183adb1aa579dbf3, type: 3}
+  enemies: []
   enemySpawnAmount: 5
   enemyCount: 0
   timeInbetweenSpawns: 5
+  roomComplete: 0
+  roomStarted: 0
+  enemiesAlive: 0
   doors:
   - {fileID: 223196512}
 --- !u!1 &1199888693
@@ -8643,9 +8663,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 8870375258392945596, guid: 1b0c597d7be2c4bd183adb1aa579dbf3, type: 3}
+  enemies: []
   enemySpawnAmount: 5
   enemyCount: 0
   timeInbetweenSpawns: 5
+  roomComplete: 0
+  roomStarted: 0
+  enemiesAlive: 0
   doors:
   - {fileID: 2038298774}
   - {fileID: 1156906212}
@@ -9875,9 +9899,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 8870375258392945596, guid: 1b0c597d7be2c4bd183adb1aa579dbf3, type: 3}
+  enemies: []
   enemySpawnAmount: 5
   enemyCount: 0
   timeInbetweenSpawns: 5
+  roomComplete: 0
+  roomStarted: 0
+  enemiesAlive: 0
   doors:
   - {fileID: 674244532}
   - {fileID: 647068805}
@@ -10661,9 +10689,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 8870375258392945596, guid: 1b0c597d7be2c4bd183adb1aa579dbf3, type: 3}
+  enemies: []
   enemySpawnAmount: 5
   enemyCount: 0
   timeInbetweenSpawns: 5
+  roomComplete: 0
+  roomStarted: 0
+  enemiesAlive: 0
   doors:
   - {fileID: 873715495}
   - {fileID: 1073823797}
@@ -11810,9 +11842,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 8870375258392945596, guid: 1b0c597d7be2c4bd183adb1aa579dbf3, type: 3}
+  enemies: []
   enemySpawnAmount: 5
   enemyCount: 0
   timeInbetweenSpawns: 5
+  roomComplete: 0
+  roomStarted: 0
+  enemiesAlive: 0
   doors:
   - {fileID: 860060374}
   - {fileID: 1668298762}

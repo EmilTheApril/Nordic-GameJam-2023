@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Attack
   - TagText
+  - Clove
+  - Enemy
   layers:
   - Default
   - TransparentFX
