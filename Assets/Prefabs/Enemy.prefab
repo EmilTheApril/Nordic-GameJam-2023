@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 8870375258392945601}
   - component: {fileID: 8870375258392945602}
   - component: {fileID: 8870375258392945603}
+  - component: {fileID: 8174396147906986238}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -79,6 +80,21 @@ CapsuleCollider:
   m_Height: 1.1
   m_Direction: 1
   m_Center: {x: 0, y: 0.007584095, z: 0}
+--- !u!114 &8174396147906986238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8870375258392945596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 790afd19ba8b99e43a561cbbf223e524, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 5
+  room: {fileID: 0}
+  hurtSound: {fileID: 0}
 --- !u!1001 &8870375257279149574
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -142,10 +158,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6652725513331149018, guid: 7ea810f7771cddb459fa6f20d366e7be, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 01a3df65eff91b047819232319eadf85, type: 2}
+    - target: {fileID: -5114592074859123181, guid: 7ea810f7771cddb459fa6f20d366e7be, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 01a3df65eff91b047819232319eadf85, type: 2}
+    - target: {fileID: 153771615331032417, guid: 7ea810f7771cddb459fa6f20d366e7be, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d44451e1e569b734b918ea5443b57d8a, type: 2}
     - target: {fileID: 919132149155446097, guid: 7ea810f7771cddb459fa6f20d366e7be, type: 3}
       propertyPath: m_Name
       value: Nightgaunt_F
       objectReference: {fileID: 0}
+    - target: {fileID: 1583156868601706836, guid: 7ea810f7771cddb459fa6f20d366e7be, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d44451e1e569b734b918ea5443b57d8a, type: 2}
+    - target: {fileID: 7109145727101407628, guid: 7ea810f7771cddb459fa6f20d366e7be, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 01a3df65eff91b047819232319eadf85, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ea810f7771cddb459fa6f20d366e7be, type: 3}
 --- !u!4 &8976622050654605805 stripped
