@@ -94,7 +94,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 5
   room: {fileID: 0}
-  hurtSound: {fileID: 0}
+  hurtSound: {fileID: 8300000, guid: 52cd81c1b49b24cb0a56c36058332796, type: 3}
 --- !u!1001 &8870375257279149574
 PrefabInstance:
   m_ObjectHideFlags: 0

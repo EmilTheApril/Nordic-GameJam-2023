@@ -20,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     private void Update()
@@ -29,15 +30,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && Cursor.lockState != CursorLockMode.Locked)
-        {
-            Cursor.lockState = CursorLockMode.Locked;
-        }
-        else if(Input.GetKeyDown(KeyCode.Escape) && Cursor.lockState != CursorLockMode.None)
-        {
-            Cursor.lockState = CursorLockMode.None;
-        }
-
         Move();
         Jump();
     }
