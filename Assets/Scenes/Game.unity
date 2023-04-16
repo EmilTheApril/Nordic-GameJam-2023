@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571337, b: 0.3069219, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2302,6 +2302,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 265473881}
+  - component: {fileID: 265473883}
+  - component: {fileID: 265473882}
   m_Layer: 0
   m_Name: Room4
   m_TagString: Untagged
@@ -2330,6 +2332,38 @@ Transform:
   m_Father: {fileID: 1183541533}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!65 &265473882
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 265473880}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 15, y: 6, z: 15}
+  m_Center: {x: 0, y: 3, z: 0}
+--- !u!114 &265473883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 265473880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 422bc5a101a8c4288b64340005e715c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 8870375258392945596, guid: 1b0c597d7be2c4bd183adb1aa579dbf3, type: 3}
+  enemySpawnAmount: 5
+  enemyCount: 0
+  timeInbetweenSpawns: 5
+  doors:
+  - {fileID: 523184730}
+  - {fileID: 63319824}
 --- !u!1 &318391681
 GameObject:
   m_ObjectHideFlags: 0
@@ -4124,6 +4158,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 526314432}
+  - component: {fileID: 526314434}
+  - component: {fileID: 526314433}
   m_Layer: 0
   m_Name: Room7
   m_TagString: Untagged
@@ -4152,6 +4188,38 @@ Transform:
   m_Father: {fileID: 1183541533}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!65 &526314433
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 526314431}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 15, y: 6, z: 15}
+  m_Center: {x: 0, y: 3, z: 0}
+--- !u!114 &526314434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 526314431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 422bc5a101a8c4288b64340005e715c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 8870375258392945596, guid: 1b0c597d7be2c4bd183adb1aa579dbf3, type: 3}
+  enemySpawnAmount: 5
+  enemyCount: 0
+  timeInbetweenSpawns: 5
+  doors:
+  - {fileID: 1861152291}
+  - {fileID: 1372918529}
 --- !u!1 &534870232
 GameObject:
   m_ObjectHideFlags: 0
@@ -5167,6 +5235,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 762762420}
+  - component: {fileID: 762762421}
+  - component: {fileID: 762762422}
   m_Layer: 0
   m_Name: Room1
   m_TagString: Untagged
@@ -5195,6 +5265,37 @@ Transform:
   m_Father: {fileID: 1183541533}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &762762421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 762762419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 422bc5a101a8c4288b64340005e715c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 8870375258392945596, guid: 1b0c597d7be2c4bd183adb1aa579dbf3, type: 3}
+  enemySpawnAmount: 5
+  enemyCount: 0
+  timeInbetweenSpawns: 5
+  doors:
+  - {fileID: 1382470211}
+--- !u!65 &762762422
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 762762419}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 15, y: 6, z: 15}
+  m_Center: {x: 0, y: 3, z: 0}
 --- !u!1 &770172435
 GameObject:
   m_ObjectHideFlags: 0
@@ -7421,6 +7522,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1146051965}
+  - component: {fileID: 1146051967}
+  - component: {fileID: 1146051966}
   m_Layer: 0
   m_Name: Room6
   m_TagString: Untagged
@@ -7449,6 +7552,38 @@ Transform:
   m_Father: {fileID: 1183541533}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1146051966
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146051964}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 15, y: 6, z: 15}
+  m_Center: {x: 0, y: 3, z: 0}
+--- !u!114 &1146051967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146051964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 422bc5a101a8c4288b64340005e715c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 8870375258392945596, guid: 1b0c597d7be2c4bd183adb1aa579dbf3, type: 3}
+  enemySpawnAmount: 5
+  enemyCount: 0
+  timeInbetweenSpawns: 5
+  doors:
+  - {fileID: 1220906845}
+  - {fileID: 1761850043}
 --- !u!1 &1156906212
 GameObject:
   m_ObjectHideFlags: 0
@@ -7861,6 +7996,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1199359619}
+  - component: {fileID: 1199359621}
+  - component: {fileID: 1199359620}
   m_Layer: 0
   m_Name: Room9
   m_TagString: Untagged
@@ -7889,6 +8026,37 @@ Transform:
   m_Father: {fileID: 1183541533}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1199359620
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199359618}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 15, y: 6, z: 15}
+  m_Center: {x: 0, y: 3, z: 0}
+--- !u!114 &1199359621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199359618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 422bc5a101a8c4288b64340005e715c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 8870375258392945596, guid: 1b0c597d7be2c4bd183adb1aa579dbf3, type: 3}
+  enemySpawnAmount: 5
+  enemyCount: 0
+  timeInbetweenSpawns: 5
+  doors:
+  - {fileID: 223196512}
 --- !u!1 &1199888693
 GameObject:
   m_ObjectHideFlags: 0
@@ -8419,6 +8587,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1243766189}
+  - component: {fileID: 1243766191}
+  - component: {fileID: 1243766190}
   m_Layer: 0
   m_Name: Room8
   m_TagString: Untagged
@@ -8447,6 +8617,38 @@ Transform:
   m_Father: {fileID: 1183541533}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1243766190
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1243766188}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 15, y: 6, z: 15}
+  m_Center: {x: 0, y: 3, z: 0}
+--- !u!114 &1243766191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1243766188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 422bc5a101a8c4288b64340005e715c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 8870375258392945596, guid: 1b0c597d7be2c4bd183adb1aa579dbf3, type: 3}
+  enemySpawnAmount: 5
+  enemyCount: 0
+  timeInbetweenSpawns: 5
+  doors:
+  - {fileID: 2038298774}
+  - {fileID: 1156906212}
 --- !u!1 &1266497140
 GameObject:
   m_ObjectHideFlags: 0
@@ -9432,7 +9634,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1382470212
 Transform:
   m_ObjectHideFlags: 0
@@ -9617,6 +9819,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1484840018}
+  - component: {fileID: 1484840020}
+  - component: {fileID: 1484840019}
   m_Layer: 0
   m_Name: Room2
   m_TagString: Untagged
@@ -9645,6 +9849,38 @@ Transform:
   m_Father: {fileID: 1183541533}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1484840019
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1484840017}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 15, y: 6, z: 15}
+  m_Center: {x: 0, y: 3, z: 0}
+--- !u!114 &1484840020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1484840017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 422bc5a101a8c4288b64340005e715c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 8870375258392945596, guid: 1b0c597d7be2c4bd183adb1aa579dbf3, type: 3}
+  enemySpawnAmount: 5
+  enemyCount: 0
+  timeInbetweenSpawns: 5
+  doors:
+  - {fileID: 674244532}
+  - {fileID: 647068805}
 --- !u!1 &1498325076
 GameObject:
   m_ObjectHideFlags: 0
@@ -10369,6 +10605,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1661539677}
+  - component: {fileID: 1661539679}
+  - component: {fileID: 1661539678}
   m_Layer: 0
   m_Name: Room5
   m_TagString: Untagged
@@ -10397,6 +10635,38 @@ Transform:
   m_Father: {fileID: 1183541533}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
+--- !u!65 &1661539678
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1661539676}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 15, y: 6, z: 15}
+  m_Center: {x: 0, y: 3, z: 0}
+--- !u!114 &1661539679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1661539676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 422bc5a101a8c4288b64340005e715c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 8870375258392945596, guid: 1b0c597d7be2c4bd183adb1aa579dbf3, type: 3}
+  enemySpawnAmount: 5
+  enemyCount: 0
+  timeInbetweenSpawns: 5
+  doors:
+  - {fileID: 873715495}
+  - {fileID: 1073823797}
 --- !u!1 &1668298762
 GameObject:
   m_ObjectHideFlags: 0
@@ -11484,6 +11754,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1929390303}
+  - component: {fileID: 1929390305}
+  - component: {fileID: 1929390304}
   m_Layer: 0
   m_Name: Room3
   m_TagString: Untagged
@@ -11512,6 +11784,38 @@ Transform:
   m_Father: {fileID: 1183541533}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!65 &1929390304
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1929390302}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 15, y: 6, z: 15}
+  m_Center: {x: 0, y: 3, z: 0}
+--- !u!114 &1929390305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1929390302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 422bc5a101a8c4288b64340005e715c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 8870375258392945596, guid: 1b0c597d7be2c4bd183adb1aa579dbf3, type: 3}
+  enemySpawnAmount: 5
+  enemyCount: 0
+  timeInbetweenSpawns: 5
+  doors:
+  - {fileID: 860060374}
+  - {fileID: 1668298762}
 --- !u!1 &1931498987
 GameObject:
   m_ObjectHideFlags: 0
@@ -12801,7 +13105,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6332463519682222210, guid: 7704fb97ad8c64b28a3b6f9053338e64, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.15
       objectReference: {fileID: 0}
     - target: {fileID: 6332463519682222210, guid: 7704fb97ad8c64b28a3b6f9053338e64, type: 3}
       propertyPath: m_LocalRotation.w
