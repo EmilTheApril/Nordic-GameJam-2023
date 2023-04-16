@@ -7,6 +7,7 @@ public class Gun : MonoBehaviour
     public Transform clovesSpawn;
     public GameObject clovesPrefab;
     public float speed = 30;
+    public AudioClip shootSound;
 
     private void Update()
     {
@@ -14,6 +15,7 @@ public class Gun : MonoBehaviour
         {
             var cloves = Instantiate(clovesPrefab, clovesSpawn.position, Quaternion.identity);
             cloves.GetComponent<Rigidbody>().velocity = transform.up * speed;
+            SoundManager.instance.PlaySound(shootSound);
         }
     }
 }
