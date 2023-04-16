@@ -4,6 +4,12 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Main Menu.unity
+    guid: 8e5d195d649c4408280d1d2e9203b287
+  - enabled: 1
+    path: Assets/Scenes/Game.unity
+    guid: beb8de64abbee49118731a841ad74354
   m_configObjects:
     io.coherence.simulator.build.options: {fileID: 11400000, guid: 95eb4161d117749e1a036a9eb6357672, type: 2}
