@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class Gun : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Transform clovesSpawn;
+    public GameObject clovesPrefab;
+    public float speed = 30;
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            var cloves = Instantiate(clovesPrefab, clovesSpawn.position, Quaternion.identity);
+            cloves.GetComponent<Rigidbody>().velocity = transform.up * speed;
+        }
     }
 }
