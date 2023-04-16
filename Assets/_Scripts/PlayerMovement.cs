@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using Coherence.Toolkit;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -12,35 +11,20 @@ public class PlayerMovement : MonoBehaviour
     private bool jumping;
     private bool isGrounded;
 
-    [SerializeField] private GameObject attackObject;
-    [SerializeField] private GameObject TagText;
-
     private Vector3 dir;
-
-    [SerializeField] private bool isMonster;
 
     [SerializeField] private Camera camera;
 
     private Rigidbody rb;
 
-    private CoherenceSync sync;
-
     private void Start()
     {
-        sync = GetComponent<CoherenceSync>();
-        SendDisableAttackCommand();
         rb = GetComponent<Rigidbody>();
-        TagText = GameObject.FindGameObjectWithTag("TagText");
-        if (TagText != null)
-        {
-            TagText.SetActive(false);
-        }
     }
 
     private void Update()
     {
         MouseMovement();
-        TagPerson();
     }
 
     private void FixedUpdate()
@@ -54,69 +38,8 @@ public class PlayerMovement : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
         }
 
-        Leap();
-
         Move();
         Jump();
-    }
-
-    public void SendDisableAttackCommand()
-    {
-        sync.SendCommand<PlayerMovement>(nameof(DisableAttackObject), Coherence.MessageTarget.All);
-    }
-
-    public void SendEnableAttackCommand()
-    {
-        sync.SendCommand<PlayerMovement>(nameof(EnableAttackObject), Coherence.MessageTarget.All);
-    }
-
-    public void Leap()
-    {
-        if (!isMonster) return;
-        if (Input.GetKeyDown(KeyCode.LeftShift))
-        {
-            rb.AddForce(camera.transform.forward * 50, ForceMode.Impulse);
-        }
-    }
-
-    public void TagPerson()
-    {
-        if (Input.GetKeyDown(KeyCode.Mouse0) && isMonster)
-        {
-            SendEnableAttackCommand();
-            Invoke("SendDisableAttackCommand", 0.1f);
-        }
-    }
-
-    public void DisableTagText()
-    {
-        if (TagText != null)
-        {
-            TagText.SetActive(false);
-        }
-    }
-
-    public void DisableAttackObject()
-    {
-        attackObject.SetActive(false);
-    }
-
-    public void EnableAttackObject()
-    {
-        attackObject.SetActive(true);
-    }
-
-    public void SetIsMonster()
-    {
-        if (!isMonster)
-        {
-            if (TagText != null)
-            {
-                TagText.SetActive(true);
-            }
-            Invoke("DisableTagText", 1.5f);
-        }
-        isMonster = !isMonster;
     }
 
     private void OnMovement(InputValue inputValue)
@@ -156,11 +79,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Attack"))
-        {
-            GameManager.instance.TagPlayer(gameObject);
-            SetIsMonster();
-            other.gameObject.GetComponent<PlayerMovement>().SetIsMonster();
-        }
+        
     }
 }
